@@ -9,49 +9,53 @@
 /* Remove background-color at end*/
 .cuisine {
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-areas:
-        "h1 img"
-        "p img";
-    min-height: 300px;
     box-shadow: 10px 10px 20px;
-    margin: 2%;
-    border-top-right-radius: 50vh;
-    border-bottom-right-radius: 50vh;
-    border-top-left-radius: 10vh;
-    border-bottom-left-radius: 10vh;
+    margin: 2%;;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "H I"
+        "P I";
+    border-end-end-radius: 50vh;
+    border-start-end-radius: 50vh;
+    border-end-start-radius: 10vh;
+    border-start-start-radius: 10vh;
+    background: linear-gradient(135deg);
 }
 
+/* https://www.w3schools.com/TAgs/att_dir.asp */
+
 .cuisine img {
-    grid-area: img;
+    grid-area: I;
     height: 100%;
     width: 100%;
-    border-top-right-radius: 50vh;
-    border-bottom-right-radius: 50vh;
     object-fit: cover;
+    border-end-end-radius: 50vh;
+    border-start-end-radius: 50vh;
+    box-shadow: 100px 100px 0px inset;
 }
 
 .cuisine h1 {
     font-family: system-ui;
-    grid-area: h1;
+    grid-area: H;
     text-decoration: underline;
     text-transform: uppercase;
-    overflow-wrap: break-word;
-    margin-left: 4%;
-    margin-right: 2%;
-    font-size: 50px;
-    margin-top: 2%;
-    margin-bottom: 0%;
+    margin-inline: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 80px;
+    text-align:center;
+    letter-spacing: min(1em, 10px);
 }
 
 .cuisine p {
-    grid-area: p;
+    grid-area: P;
     font-family: Calibri;
     overflow-wrap: break-word;
-    margin-left: 4%;
-    margin-right: 2%;
-    margin-top: 0%;
-    font-size: 25px;
+    margin-inline: 1rem;
+    padding: 0%;
+    font-size: 30px;
+    direction: ltr;
 }
 
 
@@ -66,4 +70,8 @@
     grid-auto-rows: 300px;
     grid-auto-flow:column;
     overflow:scroll
+}
+
+.mythology p {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
