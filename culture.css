@@ -1,26 +1,21 @@
 /*https://stackoverflow.com/questions/60975534/css-set-border-radius-relative-to-height*/
 /*Grid and Flex box was learned from the youtube channel 'Coding2Go'*/
-/* I tried using:
-        --height: auto;
-        border-top-right-radius: calc(var(--height) * 0.5);
-        border-bottom-right-radius: calc(var(--height) * 0.5);
-   but you can't calculate with a variable using auto. This means that if the viewable height (vh) of the box is too big for the page then it won't be fully curved.*/
-
 /* Remove background-color at end*/
+/* Only problem is that the curve of the border looks weird when you shrink the height of the viewport too much.*/
 .cuisine {
     display: grid;
-    box-shadow: 10px 10px 20px;
-    margin: 2%;;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: auto;
+    box-shadow: 0 4px 12px;
+    margin: 2%;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto 1fr;
     grid-template-areas:
         "H I"
         "P I";
-    border-end-end-radius: 50vh;
-    border-start-end-radius: 50vh;
+    border-end-end-radius: 150px 50%;
+    border-start-end-radius: 150px 50%;
     border-end-start-radius: 10vh;
     border-start-start-radius: 10vh;
-    background: linear-gradient(135deg);
+    overflow: hidden;
 }
 
 /* https://www.w3schools.com/TAgs/att_dir.asp */
@@ -30,9 +25,6 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-end-end-radius: 50vh;
-    border-start-end-radius: 50vh;
-    box-shadow: 100px 100px 0px inset;
 }
 
 .cuisine h1 {
@@ -41,19 +33,19 @@
     text-decoration: underline;
     text-transform: uppercase;
     margin-inline: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 0;
+    margin-block: 0;
     font-size: 80px;
     text-align:center;
-    letter-spacing: min(1em, 10px);
+    letter-spacing: 5px;
 }
 
 .cuisine p {
     grid-area: P;
     font-family: Calibri;
-    overflow-wrap: break-word;
-    margin-inline: 1rem;
-    padding: 0%;
+    margin-left: 3vh;
+    margin-right: 0vh;
+    margin-top: 0vh;
+    margin-bottom: 3vh;
     font-size: 30px;
     direction: ltr;
 }
