@@ -2,6 +2,67 @@
 /*Grid and Flex box was learned from the youtube channel 'Coding2Go'*/
 /* Remove background-color at end*/
 /* Only problem is that the curve of the border looks weird when you shrink the height of the viewport too much.*/
+body {
+    height: 100%;
+    margin: 0;
+}
+.page-nav {
+    height: 70px;
+    box-shadow: 0 2px 10px;
+}
+
+.page-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.page-nav li {
+    flex: 1;
+    height: 100%;
+}
+
+.page-nav img{
+    width: 70px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.page-nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: #555555;
+    background-blend-mode: darken;
+    background-position-y: center;
+    outline: 0px solid black;
+}
+
+.page-nav a:hover {
+    transition: 1s;
+    transform: scale(1.05);
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 10px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .cuisine {
     display: grid;
     box-shadow: 0 4px 12px;
