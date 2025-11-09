@@ -1,0 +1,22 @@
+- [ ] Elements transition in when page is loaded.
+- [ ] Should every page in a section have the same background or a different background?
+- [ ] Nav bar below flags should change depending on the page you're on.
+- [ ] Stick the nav bar to the top until the vh of the screen gets too small.
+- [X] Automatically darken background to keep it in the background.
+- [ ] Create left and right variants for elements.
+- [X] Make a third nav bar for famous people?
+- [ ] Check for easy way to update web page when github is updated.
+- [ ] Make a dedicated credits page.
+- [ ] Footer of each page should have a credits link that link to their specific part of credits page.
+- [ ] The cuisine box should change to the famous people box when it gets too small.
+- [ ] CSS border gradient for elements?
+- [ ] Glow for elements? (https://www.youtube.com/watch?v=ezP4kbOvs_E)
+- [ ] Use culture specific patterns for certain elements? (e.g. Celtic Weave: https://www.vecteezy.com/vector-art/10556747-celtic-knot-seamless-pattern)
+- [ ] Double check the project brief for HTML standards.
+- [ ] Check for way to display images when hovering over text. (e.g. Hovering over the words 'Starry Night' on the Vincent Van Gogh text will show the painting in a pop up box) (Put an image in the abbreviation syntax?)
+- [ ] Explanation of flag meaning in the home page for each.
+- [ ] History of country in home page for each.
+- [ ] Hello in countries language in home page for each.
+- [ ] Nav bar changes colour depending on what country you're on?
+- [ ] State purpose of website in home page to make it clear who it's aimed at. (e.g. This website is meant ot educate you on each culture but if you plan on visiting, there is a location page that includes places to visit.
+- [ ] Make famous people a timeline?
