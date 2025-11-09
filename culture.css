@@ -13,6 +13,70 @@ body {
     margin: 0;
 }
 
+p {
+    grid-area: P;
+    font-family: Calibri;
+    font-size: 30px;
+    direction: ltr;
+}
+
+p, h1 {
+    margin-inline: 1rem;
+    margin-block: 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align:center;
+}
+
+h1 span{
+    font-size: clamp(2rem, 8vw, 80px);
+    font-family: system-ui;
+    grid-area: H;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+h1 span, h2 span, p span, img, iframe, a, .flag-bar, .cuisine, .mythology {
+    display: inline-block;
+    transition: 0.5s;
+}
+
+h2 {
+    font-family: 'Gill Sans MT';
+    font-size: clamp(2rem, 8vw, 100px);
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    margin-block: 0;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.cuisine:hover, h1 span:hover, p span:hover, .mythology:hover, .mythology img:hover {
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+.cuisine, .mythology, .mythology img, .flag-bar {
+    border-radius: 50px;
+    box-shadow: 0 4px 12px;
+}
+
+.mythology img, .cuisine img {
+    grid-area: I;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 
 
@@ -25,6 +89,7 @@ body {
 .page-nav {
     height: 70px;
     box-shadow: 0 2px 10px;
+    margin-bottom: 10px;
 }
 
 .page-nav ul {
@@ -62,8 +127,6 @@ body {
 }
 
 .page-nav a:hover {
-    transition: 1s;
-    transform: scale(1.05);
     background-color: #777777;
     box-shadow: 0 2px 10px black;
 }
@@ -77,9 +140,102 @@ body {
 
 
 
+.culture-nav {
+    display: flex;
+    margin:auto;
+    justify-content: space-evenly;
+    height: 40px;
+    box-shadow: 0 2px 10px;
+    max-width: 600px;
+    width:100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: calibri;
+    font-size: 25px;
+}
+
+.culture-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.culture-nav li {
+    flex: 1;
+}
+
+.culture-nav a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.culture-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 10px black;
+}
+
+.culture-nav img{
+    height: 25px;
+    filter: invert(100%);
+}
+
+
+
+
+
+
+
+
+
+.flag-bar {
+    max-width: 900px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-inline: 10px;
+    padding-block: 20px;
+}
+
+.flag-bar img {
+    align-items: center;
+    height: 100px;
+    width: 140px;
+}
+
+.flag-bar a {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 140px;
+    border-radius: 15px;
+    overflow:hidden;
+}
+
+.flag-bar a:hover {
+    box-shadow: 0 2px 10px black;
+}
+
+
+
+
+
+
+
+
+
 .cuisine {
     display: grid;
-    box-shadow: 0 4px 12px;
     margin: 2%;
     grid-template-columns: 60% 40%;
     grid-template-areas:
@@ -87,41 +243,16 @@ body {
         "P I";
     border-end-end-radius: 150px 50%;
     border-start-end-radius: 150px 50%;
-    border-end-start-radius: 10vh;
-    border-start-start-radius: 10vh;
     overflow: hidden;
 }
 
 /* https://www.w3schools.com/TAgs/att_dir.asp */
 
-.cuisine img {
-    grid-area: I;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.cuisine h1 {
-    font-family: system-ui;
-    grid-area: H;
-    text-decoration: underline;
-    text-transform: uppercase;
-    margin-inline: 1rem;
-    margin-block: 0;
-    font-size: 80px;
-    text-align:center;
-    letter-spacing: 5px;
-}
-
 .cuisine p {
-    grid-area: P;
-    font-family: Calibri;
-    margin-left: 3vh;
+    margin-left: 1.5vh;
     margin-right: 0vh;
     margin-top: 0vh;
     margin-bottom: 3vh;
-    font-size: 30px;
-    direction: ltr;
 }
 
 
@@ -130,11 +261,13 @@ body {
 
 
 
-
-
-
-.video {
-    width: 80%
+iframe {
+    display: flex;
+    margin: auto;
+    width: 70vw;
+    height: 39.375vw;
+    border-radius: 30px;
+    margin-top: 2.5vw;
 }
 
 
@@ -172,44 +305,21 @@ body {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2%;
-    border-radius: 50px;
-    box-shadow: 0 4px 12px;
 }
 
 /* #fdfdfd softens the text*/
 .mythology p, .mythology h1 {
-    margin-inline: 1rem;
-    margin-block: 0;
     color: #fdfdfd;
     text-shadow: 2px 2px 8px black;
 }
 
-/* https://www.w3schools.com/cssref//func_clamp.php */
-
-.mythology h1 {
-    grid-area: H;
-    font-family: system-ui;
-    font-size: clamp(2rem, 6vw, 80px);
-    text-decoration: underline;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 5px;
-}
-
 .mythology p {
-    grid-area: P;
-    font-family: Calibri;
-    font-size: 30px;
     margin: 0vh;
-    direction: ltr;
     width: min(100%, 550px);
 }
 
+/* https://www.w3schools.com/cssref//func_clamp.php */
+
 .mythology img {
-    grid-area: I;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50px;
     width: min(100%, 550px);
 }
