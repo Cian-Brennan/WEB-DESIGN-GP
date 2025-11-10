@@ -20,7 +20,11 @@
 - [ ] Nav bar changes colour depending on what country you're on?
 - [ ] State purpose of website in home page to make it clear who it's aimed at. (e.g. This website is meant to educate you on each culture but if you plan on visiting, there is a location page that includes places to visit.)
 - [ ] Make famous people a timeline?
+<<<<<<< HEAD
 - [ ] Footer should contain a credits link, a credit for who made the html for a specific page,
 - [ ] Change directory / file formatting so that the urls don't end in .html
 - [ ] Add 'additional reading for each element (e.g. recipe link icon for cuisine and wikipedia page for famous people)
 - [ ] .timeline should just be a line in the middle of the page.
+=======
+- [ ] Make sure background doesn't repeat. Either make it scroll slowly or don't scroll at all.
+>>>>>>> a70c4f043ba05b876c891e1d0e5e66ed3d6ac9ae
