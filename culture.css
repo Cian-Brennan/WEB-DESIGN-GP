@@ -279,7 +279,7 @@ iframe {
 
 
 
-.celebrity li{
+.people ul{
     display: grid;
     grid-auto-columns: 300px;
     grid-auto-rows: 300px;
@@ -322,4 +322,54 @@ iframe {
 
 .mythology img {
     width: min(100%, 550px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-gallery .content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow: scroll;
+}
+
+/* I have no idea why width: 0% fixed the background being too wide. */
+.an-image {
+    background-color: #FFCCCC;
+    box-shadow: 10px 10px #EEBBBB;
+    border-radius: 10px;
+    width: 0%;
+    min-width: 300px;
+    margin: 2%;
+}
+
+.an-image img {
+    width: 0%;
+    min-width: 300px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.image-caption {
+    padding: 7px;
+    font-family: sans-serif;
+    font-size: 20px;
 }
