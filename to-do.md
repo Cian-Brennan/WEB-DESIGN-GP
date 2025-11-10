@@ -20,3 +20,4 @@
 - [ ] Nav bar changes colour depending on what country you're on?
 - [ ] State purpose of website in home page to make it clear who it's aimed at. (e.g. This website is meant ot educate you on each culture but if you plan on visiting, there is a location page that includes places to visit.
 - [ ] Make famous people a timeline?
+- [ ] Make sure background doesn't repeat. Either make it scroll slowly or don't scroll at all.
