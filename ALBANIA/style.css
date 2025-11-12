@@ -1,19 +1,16 @@
-/*https://stackoverflow.com/questions/60975534/css-set-border-radius-relative-to-height*/
-/*Grid and Flex box was learned from the youtube channel 'Coding2Go'*/
-/* Remove background-color at end*/
-/* Only problem is that the curve of the border looks weird when you shrink the height of the viewport too much.*/
 html {
     background-color: #1d2327;
 }
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0b1d2a;
-  color: #f0f0f0;
+  background-color: #1d2327;
+  color: #444444;
   margin: 0;
   padding: 0;
   line-height: 1.7;
 }
+
 
 main {
   max-width: 900px;
@@ -36,7 +33,7 @@ main {
   background-repeat: no-repeat;
 
   position: relative;
-  z-index: 0;
+  z-index: 1;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -49,64 +46,46 @@ main::before {
   z-index: -1;
 }
 
+
 background-image: url("albania-flag.jpg");
 
+.overview {
+  background-color: #cc0000;
+  color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 70%;
+  margin: 40px auto;
+  font-family: Calibri, sans-serif;
+  line-height: 1.8;
+}
 
-h1 {
+.overview h1 {
+  font-size: clamp(28px, 4vw, 42px);
   text-align: center;
-  color: #ffcc00;
-  border-bottom: 2px solid #ffcc00;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
   padding-bottom: 10px;
   margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-p {
+.overview p {
   text-align: justify;
-  font-size: 1.1rem;
-  margin-bottom: 20px;
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
 }
 
-strong, em {
+.overview strong,
+.overview em {
   color: #ffd166;
 }
 
-body {
-    background-color: #444444;
-    background-blend-mode: overlay;
-    height: 100%;
-    margin: 0;
-}
 
-p {
-    grid-area: P;
-    font-family: Calibri;
-    font-size: 30px;
-    direction: ltr;
-}
 
-p, h1 {
-    margin-inline: 1rem;
-    margin-block: 0;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-}
-
-h1 {
-    text-align:center;
-}
-
-h1 span{
-    font-size: clamp(2rem, 8vw, 80px);
-    font-family: system-ui;
-    grid-area: H;
-    text-decoration: underline;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
-h1 span, h2 span, p span, img, iframe, a, .flag-bar, .cuisine, .mythology, .person {
-    display: inline-block;
-    transition: 0.5s;
-}
 
 h2 {
     font-family: 'Gill Sans MT';
