@@ -1,3 +1,8 @@
+/*https://stackoverflow.com/questions/60975534/css-set-border-radius-relative-to-height*/
+/*Grid and Flex box was learned from the youtube channel 'Coding2Go'*/
+/* Remove background-color at end*/
+/* Only problem is that the curve of the border looks weird when you shrink the height of the viewport too much.*/
+
 html {
     background-color: #1d2327;
 }
@@ -83,43 +88,6 @@ background-image: url("albania-flag.jpg");
 .overview em {
   color: #ffd166;
 }
-
-
-
-
-h2 {
-    font-family: 'Gill Sans MT';
-    font-size: clamp(2rem, 8vw, 100px);
-    text-decoration: underline;
-    text-transform: uppercase;
-    text-align: center;
-    margin-block: 0;
-    color: white;
-    text-shadow: 2px 2px 8px black;
-}
-
-h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hover {
-    transition: 0.5s;
-    transform: scale(1.05);
-}
-
-.cuisine:hover, h1 span:hover, p span:hover, .mythology:hover, .mythology img:hover, .person:hover, .people h1:hover {
-    transition: 0.5s;
-    transform: scale(1.02);
-}
-
-.cuisine, .mythology, .mythology img, .flag-bar, .people {
-    border-radius: 50px;
-    box-shadow: 0 4px 12px;
-}
-
-.mythology img, .cuisine img {
-    grid-area: I;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
 
 
 
@@ -259,155 +227,54 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
 }
 
 
-
-
-
-
-.cuisine {
-    display: grid;
-    margin: 2%;
-    grid-template-columns: 60% 40%;
-    grid-template-areas:
-        "H I"
-        "P I";
-    border-end-end-radius: 150px 50%;
-    border-start-end-radius: 150px 50%;
-    overflow: hidden;
-    margin-block: 5vh;
-}
-
-/* https://www.w3schools.com/TAgs/att_dir.asp */
-
-.cuisine p {
-    margin-inline-start: 1.7vh;
-    margin-inline-end: 1.05em;
-    margin-top: 0vh;
-    margin-bottom: 3vh;
-}
-
-
-
-
-
-
-iframe {
-    display: flex;
-    margin: auto;
-    width: 70vw;
-    height: 39.375vw;
-    border-radius: 30px;
-    margin-top: 2.5vw;
-}
-
-
-
-
-
-
-.people ul{
-    display: grid;
-    grid-auto-columns: 300px;
-    grid-auto-rows: 300px;
-    grid-auto-flow:column;
-    overflow:scroll
-}
-
-
-
-
-
-
-.mythology {
-    display: grid;
-    margin: 2%;
-    gap: 10px;
-    grid-template-columns: 50% 50%;
-    grid-template-areas:
-        "I H"
-        "I P";
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 2%;
-}
-
-.mythology p, .mythology h1 {
-    color: #fdfdfd;
-    text-shadow: 2px 2px 8px black;
-}
-
-.mythology p {
-    margin: 0vh;
-    width: min(100%, 550px);
-}
-
-/* https://www.w3schools.com/cssref//func_clamp.php */
-
-.mythology img {
-    width: min(100%, 550px);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.people {
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-block: 5vh;
-    margin-inline: 1.5vw;
-    font-size: clamp(1.2rem, 6vw, 30px);
-}
-
-.people h1 {
-    color: white;
-    text-decoration: underline;
-    font-family: Tahoma, sans-serif;
-}
-
-.people-reel {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: scroll;
-}
-
-.person {
+.fun-facts {
+    width: 70%;
+    margin: 3rem auto;
+    background: #1a1a1a;
     border-radius: 10px;
-    min-width: 300px;
-    margin: 2%;
-    box-shadow: 0 0 10px black;
-    overflow: hidden;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
 }
 
-.person:nth-child(odd) {
-    background-color: white;
-    color: black;
+.fun-facts h2 {
+    text-align: center;
+    color: #ff4b4b;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
 }
 
-.person:nth-child(even) {
-    background-color: black;
-    color: white;
+.fact {
+    background: #2c2c2c;
+    border-left: 5px solid #e63946;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background 0.3s ease;
 }
 
-.person img {
-    width: 300px;
+.fact:hover {
+    background: #333;
+    transform: scale(1.02);
 }
 
-.person .person-caption {
-    padding: 7px;
-    font-family: sans-serif;
-    font-size: 20px;
+.fact h3 {
+    color: #ff4b4b;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.fact p {
+    color: #ddd;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+
+.overview {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.overview:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(230, 57, 70, 0.6);
 }
