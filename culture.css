@@ -405,3 +405,14 @@ iframe:hover {
     font-family: sans-serif;
     font-size: 20px;
 }
+
+.home_page_container{
+    width: 90%;           /* Make the container 90% of the screen width */
+    max-width: 600px;     /* Set a maximum width for larger screens */
+            
+    background-color: white; /* White background */
+    padding: 25px;        /* Space inside the container */
+    border-radius: 10px;  /* Rounded edges */
+            
+    margin: 50px auto;
+}
