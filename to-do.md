@@ -32,3 +32,4 @@
 - [ ] Make sure background doesn't repeat. Either make it scroll slowly or don't scroll at all.
  ul is the line and li is the event?
 - [ ] Give explanation of structure of website on the main page. Tell the viewer what you'll expect to find on the homepage and in each section. (Use the structured text in notes.)
+- [ ] Create text box for tops of pages. Use the cultural pattern as the border.
