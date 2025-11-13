@@ -1,0 +1,413 @@
+html {
+    background-color: #1d2327;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1d2327;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+
+main {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #132d42;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+  text-align: justify;
+
+  background-image: url("../images/albania-flag.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+
+background-image: url("albania-flag.jpg");
+
+.overview {
+  background-color: #cc0000;
+  color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 70%;
+  margin: 40px auto;
+  font-family: Calibri, sans-serif;
+  line-height: 1.8;
+}
+
+.overview h1 {
+  font-size: clamp(28px, 4vw, 42px);
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.overview p {
+  text-align: justify;
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+.overview strong,
+.overview em {
+  color: #ffd166;
+}
+
+
+
+
+h2 {
+    font-family: 'Gill Sans MT';
+    font-size: clamp(2rem, 8vw, 100px);
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    margin-block: 0;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.cuisine:hover, h1 span:hover, p span:hover, .mythology:hover, .mythology img:hover, .person:hover, .people h1:hover {
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+.cuisine, .mythology, .mythology img, .flag-bar, .people {
+    border-radius: 50px;
+    box-shadow: 0 4px 12px;
+}
+
+.mythology img, .cuisine img {
+    grid-area: I;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+.page-nav {
+    height: 70px;
+    box-shadow: 0 2px 10px;
+    margin-bottom: 10px;
+}
+
+.page-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.page-nav li {
+    flex: 1;
+    height: 100%;
+}
+
+.page-nav img {
+    width: 70px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.page-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: #222222;
+    background-blend-mode: overlay;
+    background-position-y: center;
+    outline: 0px solid black;
+}
+
+.page-nav a:hover {
+    background-color: #777777;
+    box-shadow: 0 2px 10px black;
+}
+
+
+
+
+
+
+.culture-nav {
+    display: flex;
+    margin:auto;
+    justify-content: space-evenly;
+    height: 40px;
+    box-shadow: 0 2px 10px;
+    max-width: 600px;
+    width:100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: calibri;
+    font-size: 25px;
+}
+
+.culture-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.culture-nav li {
+    flex: 1;
+}
+
+.culture-nav a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.culture-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 10px black;
+}
+
+.culture-nav img{
+    height: 25px;
+    filter: invert(100%);
+}
+
+
+
+
+
+
+.flag-bar {
+    max-width: 900px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-inline: 10px;
+    padding-block: 20px;
+}
+
+.flag-bar img {
+    align-items: center;
+    height: 100px;
+    width: 140px;
+}
+
+.flag-bar a {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 140px;
+    border-radius: 15px;
+    overflow:hidden;
+}
+
+.flag-bar a:hover {
+    box-shadow: 0 2px 10px black;
+}
+
+
+
+
+
+
+.cuisine {
+    display: grid;
+    margin: 2%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+        "H I"
+        "P I";
+    border-end-end-radius: 150px 50%;
+    border-start-end-radius: 150px 50%;
+    overflow: hidden;
+    margin-block: 5vh;
+}
+
+/* https://www.w3schools.com/TAgs/att_dir.asp */
+
+.cuisine p {
+    margin-inline-start: 1.7vh;
+    margin-inline-end: 1.05em;
+    margin-top: 0vh;
+    margin-bottom: 3vh;
+}
+
+
+
+
+
+
+iframe {
+    display: flex;
+    margin: auto;
+    width: 70vw;
+    height: 39.375vw;
+    border-radius: 30px;
+    margin-top: 2.5vw;
+}
+
+
+
+
+
+
+.people ul{
+    display: grid;
+    grid-auto-columns: 300px;
+    grid-auto-rows: 300px;
+    grid-auto-flow:column;
+    overflow:scroll
+}
+
+
+
+
+
+
+.mythology {
+    display: grid;
+    margin: 2%;
+    gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "I H"
+        "I P";
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2%;
+}
+
+.mythology p, .mythology h1 {
+    color: #fdfdfd;
+    text-shadow: 2px 2px 8px black;
+}
+
+.mythology p {
+    margin: 0vh;
+    width: min(100%, 550px);
+}
+
+/* https://www.w3schools.com/cssref//func_clamp.php */
+
+.mythology img {
+    width: min(100%, 550px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.people {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-block: 5vh;
+    margin-inline: 1.5vw;
+    font-size: clamp(1.2rem, 6vw, 30px);
+}
+
+.people h1 {
+    color: white;
+    text-decoration: underline;
+    font-family: Tahoma, sans-serif;
+}
+
+.people-reel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+.person {
+    border-radius: 10px;
+    min-width: 300px;
+    margin: 2%;
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+}
+
+.person:nth-child(odd) {
+    background-color: white;
+    color: black;
+}
+
+.person:nth-child(even) {
+    background-color: black;
+    color: white;
+}
+
+.person img {
+    width: 300px;
+}
+
+.person .person-caption {
+    padding: 7px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
