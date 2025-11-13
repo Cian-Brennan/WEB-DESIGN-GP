@@ -1,65 +1,219 @@
+/*This is the general css for nav*/
+
+
+
 /*https://stackoverflow.com/questions/60975534/css-set-border-radius-relative-to-height*/
 /*Grid and Flex box was learned from the youtube channel 'Coding2Go'*/
-/* I tried using:
-        --height: auto;
-        border-top-right-radius: calc(var(--height) * 0.5);
-        border-bottom-right-radius: calc(var(--height) * 0.5);
-   but you can't calculate with a variable using auto. This means that if the viewable height (vh) of the box is too big for the page then it won't be fully curved.*/
-
 /* Remove background-color at end*/
-.cuisine {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-areas:
-        "h1 img"
-        "p img";
-    min-height: 300px;
-    box-shadow: 10px 10px 20px;
-    margin: 2%;
-    border-top-right-radius: 50vh;
-    border-bottom-right-radius: 50vh;
-    border-top-left-radius: 10vh;
-    border-bottom-left-radius: 10vh;
+/* Only problem is that the curve of the border looks weird when you shrink the height of the viewport too much.*/
+html {
+    background-color: #1d2327;
 }
 
-.cuisine img {
-    grid-area: img;
+body {
     height: 100%;
-    width: 100%;
-    border-top-right-radius: 50vh;
-    border-bottom-right-radius: 50vh;
-    object-fit: cover;
+    margin: 0;
+    padding-top: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
-.cuisine h1 {
+header {
+    margin:0%;
+    position:fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+}
+
+p {
+    grid-area: P;
+    font-family: Calibri;
+    font-size: 30px;
+    direction: ltr;
+}
+
+p, h1 {
+    margin-inline: 1rem;
+    margin-block: 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align:center;
+}
+
+h1 span{
+    font-size: clamp(2rem, 8vw, 80px);
     font-family: system-ui;
-    grid-area: h1;
+    grid-area: H;
     text-decoration: underline;
     text-transform: uppercase;
-    overflow-wrap: break-word;
-    margin-left: 4%;
-    margin-right: 2%;
-    font-size: 50px;
-    margin-top: 2%;
-    margin-bottom: 0%;
+    letter-spacing: 5px;
 }
 
-.cuisine p {
-    grid-area: p;
-    font-family: Calibri;
-    overflow-wrap: break-word;
-    margin-left: 4%;
-    margin-right: 2%;
-    margin-top: 0%;
+h2 {
+    font-family: 'Gill Sans MT';
+    font-size: clamp(2rem, 8vw, 100px);
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    margin-block: 0;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.page-nav {
+    height: 70px;
+    box-shadow: 0 2px 10px;
+    margin-bottom: 10px;
+}
+
+.culture-nav {
+    display: flex;
+    margin:auto;
+    justify-content: space-evenly;
+    height: 40px;
+    box-shadow: 0 2px 10px;
+    max-width: 600px;
+    width:100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: calibri;
     font-size: 25px;
 }
 
+iframe {
+    display: block !important;
+    margin: 0px auto;
+    width: 70vw;
+    height: 39.375vw;
+    border-radius: 30px;
+    margin-top: 2.5vw;
+}
 
+iframe:hover {
+    border-radius: 0px;
+}
 
-.celebrity li{
-    display: grid;
-    grid-auto-columns: 300px;
-    grid-auto-rows: 300px;
-    grid-auto-flow:column;
-    overflow:scroll
+.page-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.page-nav li {
+    flex: 1;
+    height: 100%;
+}
+
+.page-nav img {
+    /* Keeping original sizes, you can adjust these */
+    width: 70px; 
+    height: 50px;
+    border-radius: 15px;
+}
+
+.page-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: #222222;
+    background-blend-mode: overlay;
+    background-position-y: center;
+    outline: 0px solid black;
+}
+
+.page-nav a:hover {
+    background-color: #777777;
+    box-shadow: 0 2px 10px black;
+}
+
+/* --- 2. MISSING CULTURE-NAV STYLES (Food/Religion/History Bar) --- */
+
+.culture-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.culture-nav li {
+    flex: 1;
+}
+
+.culture-nav a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.culture-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 10px black;
+}
+
+.culture-nav img{
+    height: 25px;
+    filter: invert(100%);
+}
+h1 span, h2 span, p span, img, iframe, a {
+    display: inline-block;
+    transition: 0.5s;
+}
+/*end of required nav bar css */
+
+#carouselExample .carousel-item,
+#carouselExample .carousel-item img {
+    height: 400px;
+    width: 800px;
+    object-fit: cover; /* obtained from w3 schools, this element scales the image to fit the box/maintains aspect ratio */
+}
+.container {
+    border: 10px solid green;
+    padding-left: 0 !important; /*the important element bypasses any other conditions applied and ensures it has priority*/
+    padding-right: 0 !important;
+    width: 800px !important;
+}
+.carousel-caption p, .carousel-caption h5, h1 {
+    color: #FFFFFF;
+    text-shadow: 1px 1px 5px black, -1px -1px 5px, 0 0 10px black, 1px 0 black, 0 -1px black; /* obtained from w3 schools, this makes text in images easier to read. */
+}
+.carousel-caption p {
+    font-size: 22px;
+}
+.carousel-caption h5 {
+    font-size: 30px;
+}
+.video-container {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.footer {
+    background-color:white;
+    text-align: center;
+    margin-top:100px;
+    margin-bottom: 0px;
+    padding-top: 15x;
+    padding-bottom: 15px;
 }

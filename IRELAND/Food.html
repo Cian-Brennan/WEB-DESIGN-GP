@@ -6,7 +6,8 @@
     <meta name="description" content="Ukrainian Food" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Irish Food</title>
-	<link rel="stylesheet" href="/WEB-DESIGN-GP/culture.css" />
+	<link rel="stylesheet" href="culture.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 </head>
 <header>
@@ -29,44 +30,78 @@
     </ul>
 </nav>
 </header>
-<body style ="background-image: url('../IMAGES/irish_food_background.jpg');">
-	<section class="cuisine" dir= "rtr" style="background-color: #381404;">
-    	<h2 style="color: white">Irish Stew</h2>
-    	<img src="../IMAGES/irish_stew.jpg" alt="Irish Stew">
-    	<p style="color: white;">This is an Irish delicacy, which Irish people eat often. 
-            it is very simple to make consisting of water, gravy, potatoes, beef and carrots. </p>
-	</section>
-    <section class="cuisine" dir= "rtl" style="background-color: #947c73;">
-    	<h2 style="color: white">Bangers and Mash</h2>
-    	<img src="../IMAGES/bangers_and_mash.jpg" alt="Irish Bangers and Mash">
-    	<p style="color: white;">People in Ireland love bangers and mash as it is very simple bangers_and_mash
-            and made with mashed potatoes, which is a very common ingredient in Irish meals. </p>
-	</section>
-    <section class="cuisine" dir= "rtr" style="background-color: #ffa507;">
-    	<h2 style="color: white">Full Irish Breakfast</h2>
-    	<img src="../IMAGES/irish_breakfast.jpg" alt="Full Irish Breakfast">
-    	<p style="color: white;">A full Irish Breakfast is a weekly essential in Ireland. It typically consists of bacon,
-            sausages, eggs, black and white pudding, hash browns and potato bread. </p>
-	</section>
-    <section class="cuisine" dir= "rtl" style="background-color: #e9ba8d;">
-    	<h2 style="color: white">Chicken Fillet Roll</h2>
-    	<img src="../IMAGES/chicken_fillet_roll.jpg" alt="Chicken Fillet Roll">
-    	<p style="color: white;">This sandwich is a popular Irish lunch, mainly made in deli's in shops around Ireland.
-            This sandwich is typically made with a roll, breaded chicken and toppings can be selected. The most popular toppings are
-            cheese, lettuce and curry sauce.
-        </p>
-	</section>
-    <section class="cuisine" dir= "rtr" style="background-color: #63c7ff;">
-    	<h2 style="color: white">Spice Bag</h2>
-    	<img src="../IMAGES/spice_bag.jpg" alt="Spice Bag">
-    	<p style="color: white;">A spice bag is a delicious meal served in Chinese Takeaways in Ireland. It is made up of breaded chicken,
-            chips, with vegetables as an optional topping. It is then topped off with spice flakes and curry sauce. </p>
-    </section>
-    <h2><span> Videos </span></h2>
+<body style ="background-image: url('../IMAGES/vecteezy_vegetables-background-pattern_7201451.jpg');">
+
+<div class = "container">
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="../IMAGES/irish_stew.jpg" class="d-block w-100" alt="Irish Stew">    
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Irish Stew</h5>
+            <p>This is an Irish delicacy, which Irish people eat often. 
+                it is very simple to make consisting of water, gravy, potatoes, beef and carrots.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="../IMAGES/bangers_and_mash.jpg" class="d-block w-100" alt="Bangers and Mash">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Bangers and Mash</h5>
+            <p>People in Ireland love bangers and mash as it is made with mashed potatoes which is a very common ingredient in Irish meals.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="../IMAGES/irish_breakfast.jpg" class="d-block w-100" alt="Full Irish Breakfast">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Full Irish Breakfast</h5>
+            <p>A full Irish Breakfast is a weekly essential in Ireland. It typically consists of bacon,
+                sausages, eggs, black and white pudding, hash browns and potato bread.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="../IMAGES/chicken_fillet_roll.jpg" class="d-block w-100" alt="Chicken Fillet Roll">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Chicken Fillet Roll</h5>
+            <p style="color:white; ">This sandwich is a popular Irish lunch, mainly made in deli's in shops around Ireland. The most popular toppings are
+                cheese, lettuce and curry sauce.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="../IMAGES/spice_bag.jpg" class="d-block w-100" alt="Spice Bag">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Spice Bag</h5>
+            <p>A spice bag is a delicious meal served in Chinese Takeaways in Ireland. It is topped off with spice flakes and curry sauce.</p>
+        </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+</div>
+<div class="video-container">
+    <h1 style="color: white; font-size:60px"><u>Videos</u></h1>
     <iframe 
     width="560" height="315" src="https://www.youtube.com/embed/WzknfW7mK0E?si=AebS1razqnsmrMZP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
     </iframe>
     <iframe
     width="560" height="315" src="https://www.youtube.com/embed/rOZ_FeAo7zc?si=q3A4W4um9ewZ1JzZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
     </iframe>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</div>
+<div class ="footer">
+   <p>By Cian McCaul</p>
+</div>
 </body>
