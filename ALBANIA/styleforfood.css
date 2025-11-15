@@ -1,0 +1,319 @@
+/*https://stackoverflow.com/questions/60975534/css-set-border-radius-relative-to-height*/
+/*Grid and Flex box was learned from the youtube channel 'Coding2Go'*/
+/* Remove background-color at end*/
+/* Only problem is that the curve of the border looks weird when you shrink the height of the viewport too much.*/
+
+html {
+    background-color: #1d2327;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1d2327;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+
+main {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #132d42;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+  text-align: justify;
+
+  background-image: url("../images/albania-flag.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.food-section {
+  background-color: #ffffff10; /* translucent white box */
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 80%;
+  margin: 40px auto;
+  color: white;
+  line-height: 1.8;
+}
+
+
+
+
+
+
+.page-nav {
+    height: 70px;
+    box-shadow: 0 2px 10px;
+    margin-bottom: 10px;
+}
+
+.page-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.page-nav li {
+    flex: 1;
+    height: 100%;
+}
+
+.page-nav img {
+    width: 70px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.page-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: #222222;
+    background-blend-mode: overlay;
+    background-position-y: center;
+    outline: 0px solid black;
+}
+
+.page-nav a:hover {
+    background-color: #777777;
+    box-shadow: 0 2px 10px black;
+}
+
+
+
+
+
+
+.culture-nav {
+    display: flex;
+    margin:auto;
+    justify-content: space-evenly;
+    height: 40px;
+    box-shadow: 0 2px 10px;
+    max-width: 600px;
+    width:100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: calibri;
+    font-size: 25px;
+}
+
+.culture-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.culture-nav li {
+    flex: 1;
+}
+
+.culture-nav a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.culture-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 10px black;
+}
+
+.culture-nav img{
+    height: 25px;
+    filter: invert(100%);
+}
+
+
+
+
+
+
+.flag-bar {
+    max-width: 900px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-inline: 10px;
+    padding-block: 20px;
+}
+
+.flag-bar img {
+    align-items: center;
+    height: 100px;
+    width: 140px;
+}
+
+.flag-bar a {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 140px;
+    border-radius: 15px;
+    overflow:hidden;
+}
+
+.flag-bar a:hover {
+    box-shadow: 0 2px 10px black;
+}
+
+h1 {
+text-align: center;
+font-size: 3rem;
+margin-top: 40px;
+margin-bottom: 10px;
+font-weight: 700;
+letter-spacing: 2px;
+color: #f5f5f5;
+background: linear-gradient(to right, #ff3e3e, #ffd256);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow: 0 4px 12px rgba(0,0,0,0.45);
+}
+
+h1 + p {
+text-align: center;
+max-width: 850px;
+margin: 0 auto 45px auto;
+color: #dcdcdc;
+font-size: 1.15rem;
+line-height: 1.7;
+padding: 5px 10px;
+opacity: 0.9;
+}
+
+.food-card {
+background: #2b2b2b;
+width: 85%;
+margin: 28px auto;
+padding: 22px;
+border-radius: 14px;
+display: grid;
+grid-template-columns: 160px 1fr;
+gap: 18px 22px;
+align-items: start;
+
+box-shadow: 0 4px 14px rgba(0,0,0,0.28);
+transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.food-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 10px 30px rgba(0,0,0,0.36);
+}
+
+.food-photo img {
+width: 160px;
+height: 140px;
+object-fit: cover;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+display: block;
+}
+
+.food-card h2 {
+margin: 0 0 8px;
+font-size: 1.4rem;
+color: #FF0000;
+line-height: 1.1;
+font-weight: 600;
+text-shadow: 0 1px 0 rgba(0,0,0,0.35);
+}
+
+.food-card p {
+margin: 0;
+padding-top: 6px;
+color: #e6e6e6;
+line-height: 1.7;
+font-size: 0.98rem;
+letter-spacing: 0.14px;
+max-width: 100%;
+}
+
+
+.food-card > h2,
+.food-card > p {
+grid-column: 2;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 500px;
+  display: block;
+  border-radius: 10px;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 500px;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.video-container iframe:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+}
+
+@media (max-width: 700px) {
+.food-card {
+grid-template-columns: 1fr;
+padding: 20px;
+gap: 12px;
+text-align: left;
+}
+
+
+.food-photo img {
+width: 100%;
+height: auto;
+max-height: 260px;
+}
+
+.food-card h2 {
+font-size: 1.25rem;
+}
+}
