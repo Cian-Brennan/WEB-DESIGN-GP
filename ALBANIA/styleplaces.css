@@ -1,0 +1,289 @@
+ html {
+    background-color: #1d2327;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1d2327;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+
+main {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #132d42;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+  text-align: justify;
+
+  background-image: url("../images/albania-flag.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.food-section {
+  background-color: #ffffff10; /* translucent white box */
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 80%;
+  margin: 40px auto;
+  color: white;
+  line-height: 1.8;
+}
+
+
+
+
+
+
+.page-nav {
+    height: 70px;
+    box-shadow: 0 2px 10px;
+    margin-bottom: 10px;
+}
+
+.page-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.page-nav li {
+    flex: 1;
+    height: 100%;
+}
+
+.page-nav img {
+    width: 70px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.page-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: #222222;
+    background-blend-mode: overlay;
+    background-position-y: center;
+    outline: 0px solid black;
+}
+
+.page-nav a:hover {
+    background-color: #777777;
+    box-shadow: 0 2px 10px black;
+}
+
+
+
+
+
+
+.culture-nav {
+    display: flex;
+    margin:auto;
+    justify-content: space-evenly;
+    height: 40px;
+    box-shadow: 0 2px 10px;
+    max-width: 600px;
+    width:100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: calibri;
+    font-size: 25px;
+}
+
+.culture-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.culture-nav li {
+    flex: 1;
+}
+
+.culture-nav a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.culture-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 10px black;
+}
+
+.culture-nav img{
+    height: 25px;
+    filter: invert(100%);
+}
+
+
+
+
+
+
+.flag-bar {
+    max-width: 900px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-inline: 10px;
+    padding-block: 20px;
+}
+
+.flag-bar img {
+    align-items: center;
+    height: 100px;
+    width: 140px;
+}
+
+.flag-bar a {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 140px;
+    border-radius: 15px;
+    overflow:hidden;
+}
+
+.flag-bar a:hover {
+    box-shadow: 0 2px 10px black;
+}
+
+.content-wrapper {
+    width: 75%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.big-info-box {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #e6e6e6;
+    line-height: 1.7;
+    font-size: 1.12rem;
+
+    transition: 0.35s;
+    backdrop-filter: blur(6px);
+}
+
+.big-info-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 18px rgba(255, 59, 59, 0.6);
+    border-color: rgba(255, 59, 59, 0.8);
+}
+
+.section-title {
+    width: fit-content;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    background: rgba(255, 59, 59, 0.15);
+    color: #ff4d4d;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 1px solid rgba(255, 59, 59, 0.4);
+
+    transition: 0.3s;
+}
+
+.section-title:hover {
+    box-shadow: 0 0 12px rgba(255, 59, 59, 0.6);
+    border-color: rgba(255, 59, 59, 0.8);
+    transform: scale(1.03);
+}
+
+.list-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #e0e0e0;
+
+    transition: 0.35s;
+    backdrop-filter: blur(4px);
+}
+
+.list-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 16px rgba(255, 59, 59, 0.45);
+    border-color: rgba(255, 59, 59, 0.7);
+}
+
+.list-box ul {
+    padding-left: 20px;
+}
+
+.list-box ul li {
+    margin-bottom: 8px;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.photo-card {
+    background: rgba(255, 59, 59, 0.08);
+    border: 1px solid rgba(255, 59, 59, 0.3);
+    border-radius: 12px;
+    padding: 10px;
+    width: 280px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 59, 59, 0.1);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.photo-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 59, 59, 0.7);
+    border-color: rgba(255, 59, 59, 1);
+}
