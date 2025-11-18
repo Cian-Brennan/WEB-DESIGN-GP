@@ -186,25 +186,35 @@ h1 span, h2 span, p span, img, iframe, a {
 #carouselExample .carousel-item,
 #carouselExample .carousel-item img {
     height: 400px;
-    width: 800px;
+    width: 100%;
     object-fit: cover; /* obtained from w3 schools, this element scales the image to fit the box/maintains aspect ratio */
 }
 .container {
     border: 10px solid green;
     padding-left: 0 !important; /*the important element bypasses any other conditions applied and ensures it has priority*/
     padding-right: 0 !important;
-    width: 800px !important;
+    max-width: 800px !important;
+    width: 100%;
+    margin: 0 auto;
 }
-.carousel-caption p, .carousel-caption h5, h1 {
+.carousel-caption p, .carousel-caption h5 {
     color: #FFFFFF;
+    text-align: center;
     text-shadow: 1px 1px 5px black, -1px -1px 5px, 0 0 10px black, 1px 0 black, 0 -1px black; /* obtained from w3 schools, this makes text in images easier to read. */
 }
 .carousel-caption p {
-    font-size: 22px;
+    font-size: 1.5rem;
 }
 .carousel-caption h5 {
-    font-size: 30px;
+    font-size: 3rem;
 }
+
+.carousel-caption { 
+    bottom: 1rem !important; 
+    text-align: center; 
+    display: block;
+}
+
 .video-container {
     margin-top: 15px;
     margin-bottom: 30px;

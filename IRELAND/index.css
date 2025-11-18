@@ -1,0 +1,205 @@
+/*This is the general css for nav*/
+
+
+
+/*https://stackoverflow.com/questions/60975534/css-set-border-radius-relative-to-height*/
+/*Grid and Flex box was learned from the youtube channel 'Coding2Go'*/
+/* Remove background-color at end*/
+/* Only problem is that the curve of the border looks weird when you shrink the height of the viewport too much.*/
+html {
+    background-color: #1d2327;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding-top: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header {
+    margin:0%;
+    position:fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+}
+
+p {
+    grid-area: P;
+    font-family: Calibri;
+    font-size: 30px;
+    direction: ltr;
+}
+
+p, h1 {
+    margin-inline: 1rem;
+    margin-block: 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align:center;
+}
+
+h1 span{
+    font-size: clamp(2rem, 8vw, 80px);
+    font-family: system-ui;
+    grid-area: H;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-family: 'Gill Sans MT';
+    font-size: clamp(2rem, 8vw, 100px);
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    margin-block: 0;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.page-nav {
+    height: 70px;
+    box-shadow: 0 2px 10px;
+    margin-bottom: 10px;
+}
+
+.culture-nav {
+    display: flex;
+    margin:auto;
+    justify-content: space-evenly;
+    height: 40px;
+    box-shadow: 0 2px 10px;
+    max-width: 600px;
+    width:100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: calibri;
+    font-size: 25px;
+}
+
+iframe {
+    display: block !important;
+    margin: 0px auto;
+    width: 70vw;
+    height: 39.375vw;
+    border-radius: 30px;
+    margin-top: 2.5vw;
+}
+
+iframe:hover {
+    border-radius: 0px;
+}
+
+.page-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.page-nav li {
+    flex: 1;
+    height: 100%;
+}
+
+.page-nav img {
+    /* Keeping original sizes, you can adjust these */
+    width: 70px; 
+    height: 50px;
+    border-radius: 15px;
+}
+
+.page-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: #222222;
+    background-blend-mode: overlay;
+    background-position-y: center;
+    outline: 0px solid black;
+}
+
+.page-nav a:hover {
+    background-color: #777777;
+    box-shadow: 0 2px 10px black;
+}
+
+/* --- 2. MISSING CULTURE-NAV STYLES (Food/Religion/History Bar) --- */
+
+.culture-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.culture-nav li {
+    flex: 1;
+}
+
+.culture-nav a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.culture-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 10px black;
+}
+
+.culture-nav img{
+    height: 25px;
+    filter: invert(100%);
+}
+h1 span, h2 span, p span, img, iframe, a {
+    display: inline-block;
+    transition: 0.5s;
+}
+
+/* end of nav css */
+
+p {
+    text-align: center;
+}
+
+.container {
+    border: 2px solid black;
+    background-color: white;
+    padding-left: 0 !important; /*the important element bypasses any other conditions applied and ensures it has priority*/
+    padding-right: 0 !important;
+    max-width: 800px !important;
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+h1, p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
