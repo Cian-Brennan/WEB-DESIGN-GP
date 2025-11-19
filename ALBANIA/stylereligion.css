@@ -1,4 +1,4 @@
-html {
+ html {
     background-color: #1d2327;
 }
 
@@ -36,57 +36,6 @@ main {
   z-index: 1;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
-
-main::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.55);
-  border-radius: 10px;
-  z-index: -1;
-}
-
-
-background-image: url("albania-flag.jpg");
-
-.overview {
-  background-color: #cc0000;
-  color: white;
-  padding: 30px 40px;
-  border-radius: 12px;
-  width: 70%;
-  margin: 40px auto;
-  font-family: Calibri, sans-serif;
-  line-height: 1.8;
-}
-
-.overview h1 {
-  font-size: clamp(28px, 4vw, 42px);
-  text-align: center;
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.overview p {
-  text-align: justify;
-  font-size: 1.3rem;
-  margin-bottom: 18px;
-  letter-spacing: 0.5px;
-}
-
-.overview strong,
-.overview em {
-  color: #ffd166;
-}
-
-
-
-
 
 .page-nav {
     height: 70px;
@@ -185,54 +134,134 @@ background-image: url("albania-flag.jpg");
     filter: invert(100%);
 }
 
-.fun-facts {
-    width: 70%;
-    margin: 3rem auto;
-    background: #1a1a1a;
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
-}
-
-.fun-facts h2 {
-    text-align: center;
-    color: #ff4b4b;
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem;
-}
-
-.fact {
-    background: #2c2c2c;
-    border-left: 5px solid #e63946;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    border-radius: 8px;
-    transition: transform 0.2s ease, background 0.3s ease;
-}
-
-.fact:hover {
-    background: #333;
-    transform: scale(1.02);
-}
-
-.fact h3 {
-    color: #ff4b4b;
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
-}
-
-.fact p {
-    color: #ddd;
-    line-height: 1.6;
-    font-size: 1rem;
-}
 
 
-.overview {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+
+.flag-bar {
+    max-width: 900px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-inline: 10px;
+    padding-block: 20px;
 }
 
-.overview:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 25px rgba(230, 57, 70, 0.6);
+.flag-bar img {
+    align-items: center;
+    height: 100px;
+    width: 140px;
 }
+
+.flag-bar a {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 140px;
+    border-radius: 15px;
+    overflow:hidden;
+}
+
+.flag-bar a:hover {
+    box-shadow: 0 2px 10px black;
+}
+
+.content-box {   max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(8px);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 25px rgba(90, 110, 255, 0.15);
+    animation: fadeIn 0.7s ease;
+}
+
+.content-box h1,
+.content-box h2,
+.content-box h3 {
+    color: #d3dbff;
+    margin-top: 10px;
+    text-shadow: 0 0 6px rgba(140, 160, 255, 0.35);
+}
+
+.content-box p {
+    line-height: 1.7;
+    font-size: 17px;
+    color: #e4e7f5;
+    margin: 15px 0;
+}
+
+.content-box ul {
+    padding-left: 20px;
+}
+
+.content-box ul li {
+    margin: 8px 0;
+    padding-left: 12px;
+    border-left: 2px solid #728aff;
+    list-style: none;
+    color: #cfd8ff;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.bubble {
+    width: 170px;
+    height: 170px;
+
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+
+    position: absolute;
+    opacity: 0.95;
+
+    filter: drop-shadow(0 0 10px rgba(130, 150, 255, 0.7))
+            drop-shadow(0 0 25px rgba(80, 100, 255, 0.5));
+
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+.bubble1 {
+    left: 40px;
+    top: 240px;
+}
+
+.bubble2 {
+    left: 80px;
+    top: 450px;
+    animation-delay: 1s;
+}
+
+.bubble3 {
+    right: 40px;
+    top: 260px;
+    animation-delay: 0.5s;
+}
+
+.bubble4 {
+    right: 80px;
+    top: 470px;
+    animation-delay: 1.3s;
+}
+

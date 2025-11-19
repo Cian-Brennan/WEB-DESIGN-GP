@@ -1,4 +1,4 @@
-html {
+ html {
     background-color: #1d2327;
 }
 
@@ -36,57 +36,6 @@ main {
   z-index: 1;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
-
-main::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.55);
-  border-radius: 10px;
-  z-index: -1;
-}
-
-
-background-image: url("albania-flag.jpg");
-
-.overview {
-  background-color: #cc0000;
-  color: white;
-  padding: 30px 40px;
-  border-radius: 12px;
-  width: 70%;
-  margin: 40px auto;
-  font-family: Calibri, sans-serif;
-  line-height: 1.8;
-}
-
-.overview h1 {
-  font-size: clamp(28px, 4vw, 42px);
-  text-align: center;
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.overview p {
-  text-align: justify;
-  font-size: 1.3rem;
-  margin-bottom: 18px;
-  letter-spacing: 0.5px;
-}
-
-.overview strong,
-.overview em {
-  color: #ffd166;
-}
-
-
-
-
 
 .page-nav {
     height: 70px;
@@ -185,54 +134,134 @@ background-image: url("albania-flag.jpg");
     filter: invert(100%);
 }
 
-.fun-facts {
-    width: 70%;
-    margin: 3rem auto;
-    background: #1a1a1a;
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+
+
+
+
+
+.flag-bar {
+    max-width: 900px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-inline: 10px;
+    padding-block: 20px;
 }
 
-.fun-facts h2 {
-    text-align: center;
-    color: #ff4b4b;
-    margin-bottom: 1.5rem;
+.flag-bar img {
+    align-items: center;
+    height: 100px;
+    width: 140px;
+}
+
+.flag-bar a {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 140px;
+    border-radius: 15px;
+    overflow:hidden;
+}
+
+.flag-bar a:hover {
+    box-shadow: 0 2px 10px black;
+}
+
+
+
+.title-box {
+    width: fit-content;
+    margin: 20px auto 30px auto;
+    padding: 12px 25px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+
     font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+
+    transition: 0.35s;
+    box-shadow: 0 0 0 rgba(0, 150, 255, 0);
 }
 
-.fact {
-    background: #2c2c2c;
-    border-left: 5px solid #e63946;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    border-radius: 8px;
-    transition: transform 0.2s ease, background 0.3s ease;
+.title-box:hover {
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.6);
+    border-color: rgba(0, 150, 255, 0.8);
+    transform: translateY(-3px);
 }
 
-.fact:hover {
-    background: #333;
-    transform: scale(1.02);
-}
-
-.fact h3 {
-    color: #ff4b4b;
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
-}
-
-.fact p {
-    color: #ddd;
-    line-height: 1.6;
-    font-size: 1rem;
+.box-wrapper {
+width: 70%;
+margin: 40px auto;
+display: flex;
+flex-direction: column;
+gap: 25px;
 }
 
 
-.overview {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.info-box {
+background: rgba(255, 255, 255, 0.06);
+padding: 25px;
+border-radius: 15px;
+border: 1px solid rgba(255, 255, 255, 0.15);
+color: #e6e6e6;
+font-size: 1.05rem;
+line-height: 1.6;
+
+backdrop-filter: blur(5px);
+transition: 0.35s ease;
+
+box-shadow: 0 0 0 rgba(0, 140, 255, 0);
 }
 
-.overview:hover {
+.info-box:hover {
+transform: translateY(-4px);
+box-shadow: 0 0 18px rgba(0, 140, 255, 0.6);
+border-color: rgba(0, 140, 255, 0.7);
+}
+
+.box-wrapper h1 {
+text-align: center;
+margin-bottom: 10px;
+}
+
+.title-box {
+    color: #ff3b3b;
+    border-color: rgba(255, 59, 59, 0.6);
+}
+
+.title-box:hover {
+    box-shadow: 0 0 18px rgba(255, 59, 59, 0.7);
+    border-color: rgba(255, 59, 59, 1);
+}
+
+.info-box h2 {
+    color: #ff6464;
+}
+
+.image-grid {
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.35s;
+}
+
+.image-grid img:hover {
+    box-shadow: 0 0 18px rgba(255, 59, 59, 0.7);
     transform: scale(1.03);
-    box-shadow: 0 0 25px rgba(230, 57, 70, 0.6);
 }
