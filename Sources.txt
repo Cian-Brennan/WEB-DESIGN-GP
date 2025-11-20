@@ -27,3 +27,10 @@ celtic_ireland.jpg: https://www.markfisherauthor.com/wp-content/uploads/2016/10/
 irish_monastary.jpg: https://theirishhorizon.com/10-best-monasteries-to-visit-in-ireland/
 viking_raid.jpg: https://www.medievalware.com/wp-content/uploads/2023/09/viking-raid-monastery.jpg
 arrival_of_normans_ireland.jpg: https://upload.wikimedia.org/wikipedia/commons/6/6e/MarriageAoifeStrongbow.jpg
+tudor_family.jpg: https://www.thoughtco.com/tudors-introduction-to-a-royal-dynasty-1222009
+cromwellian_ireland.jpg: https://chroniclesmagazine.org/wp-content/uploads/sites/3/2022/07/CROMWELL_Battle-scaled-e1658852320330-1024x682.jpg
+act_of_union.webp: https://en.wikipedia.org/wiki/Acts_of_Union_1800
+great_famine_statues.jpg: https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFamine_Memorial_%2528Dublin%2529&psig=AOvVaw3ENqMfpwLI3IeeRJO8RyBr&ust=1763732284244000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPC1m_XsgJEDFQAAAAAdAAAAABAE
+easter_rising.jpg: https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEaster_Rising&psig=AOvVaw25fohLNzS2Z3UbIznDp1mn&ust=1763732534892000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJiskvDtgJEDFQAAAAAdAAAAABAK
+the_troubles.webp: https://www.bridgemanimages.com/en/news/alain-le-garsmeur-photographing-the-troubles/17021
+
