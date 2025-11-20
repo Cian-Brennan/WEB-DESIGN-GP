@@ -23,3 +23,7 @@ irish_food_background: https://static.vecteezy.com/system/resources/previews/007
 irish_muisic: https://pixabay.com/music/ireland-irish-jig-99533/
 map_of_ireland: https://www.irish-genealogy-toolkit.com/support-files/mapofcountiesofireland.pdf
 history_background.jpg: https://wallpapers.com/background/old-paper-background-x74ezfq53rqbx98g.html
+celtic_ireland.jpg: https://www.markfisherauthor.com/wp-content/uploads/2016/10/Celtic-warriors-2-1.jpg
+irish_monastary.jpg: https://theirishhorizon.com/10-best-monasteries-to-visit-in-ireland/
+viking_raid.jpg: https://www.medievalware.com/wp-content/uploads/2023/09/viking-raid-monastery.jpg
+arrival_of_normans_ireland.jpg: https://upload.wikimedia.org/wikipedia/commons/6/6e/MarriageAoifeStrongbow.jpg
