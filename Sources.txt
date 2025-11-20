@@ -33,4 +33,4 @@ act_of_union.webp: https://en.wikipedia.org/wiki/Acts_of_Union_1800
 great_famine_statues.jpg: https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFamine_Memorial_%2528Dublin%2529&psig=AOvVaw3ENqMfpwLI3IeeRJO8RyBr&ust=1763732284244000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPC1m_XsgJEDFQAAAAAdAAAAABAE
 easter_rising.jpg: https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEaster_Rising&psig=AOvVaw25fohLNzS2Z3UbIznDp1mn&ust=1763732534892000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJiskvDtgJEDFQAAAAAdAAAAABAK
 the_troubles.webp: https://www.bridgemanimages.com/en/news/alain-le-garsmeur-photographing-the-troubles/17021
-
+catholic_church.jpg: https://images.pexels.com/photos/161092/church-ceiling-catholicism-architecture-161092.jpeg?cs=srgb&dl=pexels-pixabay-161092.jpg&fm=jpg
