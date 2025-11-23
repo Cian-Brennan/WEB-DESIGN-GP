@@ -1,0 +1,397 @@
+/*https://stackoverflow.com/questions/60975534/css-set-border-radius-relative-to-height*/
+/*Grid and Flex box was learned from the youtube channel 'Coding2Go'*/
+/* I tried using:
+        --height: auto;
+        border-top-right-radius: calc(var(--height) * 0.5);
+        border-bottom-right-radius: calc(var(--height) * 0.5);
+   but you can't calculate with a variable using auto. This means that if the viewable height (vh) of the box is too big for the page then it won't be fully curved.*/
+
+/* Remove background-color at end*/
+
+* {
+    font-family: "Ukr_font";
+    margin: 0;
+    padding: 0;
+}
+
+/* menu section */
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #003366;
+    list-style: none;
+    margin: 0;
+    padding: 65px 0;
+}
+
+.main-nav li {
+    margin: 0 30px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 70px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-nav a:hover {
+    color: #FFD700;
+}
+
+/* food section */
+
+
+.cuisine_1 {
+    display: grid;
+    grid-template-columns: 30% 50%;
+    grid-template-areas:
+        "h1 img"
+        "p img";
+    min-height: 300px;
+    box-shadow: 10px 10px 20px;
+    margin: 2%;
+    border-top-right-radius: 50vh;
+    border-bottom-right-radius: 50vh;
+    border-top-left-radius: 10vh;
+    border-bottom-left-radius: 10vh;
+}
+
+.cuisine_1 {
+    grid-template-areas:
+        "img h1"
+        "img p";
+    grid-template-columns: 50% 30%; 
+}
+
+.cuisine_1 img {
+    grid-area: img;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 50vh;
+    border-bottom-right-radius: 50vh;
+    object-fit: cover;
+}
+
+.cuisine_1 h1 {
+    font-family: system-ui;
+    grid-area: h1;
+    text-decoration: underline;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    margin-left: 4%;
+    margin-right: 2%;
+    font-size: 50px;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+.cuisine_1 p {
+    grid-area: p;
+    overflow-wrap: break-word;
+    margin-left: 4%;
+    margin-right: 2%;
+    margin-top: 0%;
+    font-size: 30px;
+}
+
+.bor * {
+    color: #84010b;
+}
+
+.varenyk * {
+    color: #dfdec9;
+}
+
+.holub * {
+    color: #e17e02
+}
+
+.chick_k * {
+    color: #fac16f;
+}
+
+.syr * {
+    color: #5c1613;
+}
+
+/* Monuments section */
+
+.monuments {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-areas:
+        "h1 img"
+        "p img";
+    min-height: 300px;
+    box-shadow: 10px 10px 20px;
+    margin: 2%;
+    border-top-right-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    border-top-left-radius: 50vh;
+    border-bottom-left-radius: 5vh;
+}
+
+
+.monuments img {
+    grid-area: img;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    object-fit: cover;
+}
+
+.monuments h1 {
+    font-family: system-ui;
+    grid-area: h1;
+    text-decoration: underline;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    margin-left: 4%;
+    margin-right: 2%;
+    font-size: 50px;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+.monuments p {
+    grid-area: p;
+    overflow-wrap: break-word;
+    margin-left: 4%;
+    margin-right: 2%;
+    margin-top: 0%;
+    font-size: 30px;
+}
+
+.m_taras * {
+    color: #3865b0;
+}
+
+.m_mother * {
+    color: #8f847e;
+}
+
+.independ_mon * {
+    color: #d77b37;
+}
+
+.m_king * {
+    color: #353b35;
+}
+
+.ksl * {
+    color: #dda78d;
+}
+
+/* History section */
+.history {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-areas:
+        "h1 img"
+        "p img";
+    min-height: 300px;
+    box-shadow: 10px 10px 20px;
+    margin: 2%;
+    border-top-right-radius: 0vh;
+    border-bottom-right-radius: 0vh;
+    border-top-left-radius: 0vh;
+    border-bottom-left-radius: 0vh;
+}
+
+
+.history img {
+    grid-area: img;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 0vh;
+    border-bottom-right-radius: 0vh;
+    object-fit: cover;
+}
+
+.video_h {
+    grid-area:auto;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 0vh;
+    border-bottom-right-radius: 0vh;
+    object-fit: cover;
+}
+
+.history h1 {
+    font-family: system-ui;
+    grid-area: h1;
+    text-decoration: underline;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    margin-left: 4%;
+    margin-right: 2%;
+    font-size: 50px;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+.history p {
+    grid-area: p;
+    overflow-wrap: break-word;
+    margin-left: 4%;
+    margin-right: 2%;
+    margin-top: 0%;
+    font-size: 30px;
+}
+
+.kiev_rus *, .kiev_rus .red_l {
+    color: #ad852a;
+}
+
+.cossaks *, .kiev_rus .red_l {
+    color: #a0a2ae;
+    font-size: 10px;
+}
+
+.cossaks h1 {
+    font-size: 30px;
+}
+
+.red_l {
+    font-size: 20px;
+    color: red;
+}
+
+.holodomor {
+    color: #656565;
+}
+
+.war_ukr {
+    color: #308d82;
+}
+/* famous ukrainian people section*/
+
+.back {
+    background-image: url("img_ukr/ukr_pattern.jpg");
+    padding: 2% 5%;
+}
+
+.back_f_c {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header_name h1 {
+    font-size: 90px;
+    color: #d57b49;
+    margin: 30px;
+    padding-top: 30px;
+}
+
+.celebrity_1,
+.celebrity_2 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.celebrity_2 {
+    flex-direction: row-reverse;
+}
+
+.photo img {
+    width: 350px;
+    height: 450px;
+    border-radius: 5%;
+    object-fit: cover;
+    margin: 0 20px;
+}
+
+.photo h2 {
+    font-size: 40px;
+}
+
+.photo .andy {
+    color: #fd0322;
+}
+
+.photo .usyk {
+    color: #4b5ee6;
+}
+
+.photo .spiel {
+    color: #bc7f46;
+}
+
+.photo .taras {
+    color: #2e2633;
+}
+
+.photo h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 10px;
+}
+
+.fam_des p {
+    font-size: 40px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0 10px;
+}
+
+.fam_des .andy {
+    color: #fd0322;
+}
+
+.fam_des .usyk {
+    color: #4b5ee6;
+}
+
+.fam_des .spiel {
+    color: #bc7f46;
+}
+
+.fam_des .taras {
+    color: #2e2633;
+}
+
+/* Ukrainian Culture */
+
+.lan {
+    padding: 30px;
+}
+
+.lan_head  {
+    margin-left: 60px;
+    font-size: 80px;
+    background: linear-gradient(90deg, blue, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 14%;
+}
+
+
+.lan_con p{
+    font-size: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 30px;
+    width: 60%;
+}
+
+.translate {
+    display: inline-flex;
+    margin-top: 150px;
+    width: 100%;
+}
+
+.translate img {
+    margin-top: 80px;
+    width: 900px;
+    height: 60px;
+}
+@font-face {
+    font-family: "Ukr_font";
+    src: url(fonts/Bebas_Neue_Cyrillic.ttf);
+}
