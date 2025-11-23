@@ -106,6 +106,7 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
     height: 70px;
     box-shadow: 0 2px 10px;
     margin-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
 }
 
 .page-nav ul {
@@ -136,10 +137,8 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
     height: 100%;
     width: 100%;
     background-size: cover;
-    background-color: #222222;
     background-blend-mode: overlay;
-    background-position-y: center;
-    outline: 0px solid black;
+    background-size: 20%;
 }
 
 .page-nav a:hover {
@@ -189,9 +188,6 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
     height: 100%;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
 }
 
 .culture-nav a:hover {
@@ -200,7 +196,7 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
 }
 
 .culture-nav img{
-    height: 25px;
+    height: 80%;
     filter: invert(100%);
 }
 
@@ -236,7 +232,7 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
     height: 100px;
     width: 140px;
     border-radius: 15px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .flag-bar a:hover {
@@ -470,3 +466,44 @@ iframe:hover {
   height: 100%;
   transform: rotateY(180deg);
 } 
+
+.flip-card-back h1 {
+    font-family: 'goudy old style';
+    margin: 0.5em;
+    font-size: max(10vh, 50px);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.flip-card-back p {
+    font-size: clamp(10px, 5vw, 30px);
+}
+
+button {
+    width: clamp(10px, 10vw, 100px);
+    aspect-ratio: 1;
+    border-radius: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip-card-back button {
+    position: absolute;
+    bottom: 2%;
+    align-self: left;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+    border: none;
+}
+
+button img {
+    width: clamp(10px, 10vw, 100px);
+    transition: 0.4s;
+}
+
+button img:hover {
+    transform: scale(1.15);
+    transition: 0.4s;
+}
