@@ -23,6 +23,22 @@ header {
     top: 0;
 }
 
+footer {
+    background-color: #1d2327;
+    color: white;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #CCCCCC;
+}
+
+footer p {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
 p {
     grid-area: P;
     font-family: Calibri;
@@ -42,11 +58,12 @@ h1 {
 
 h1 span{
     font-size: clamp(2rem, 8vw, 80px);
-    font-family: system-ui;
+    font-family: 'goudy old style';
     grid-area: H;
     text-decoration: underline;
     text-transform: uppercase;
     letter-spacing: 5px;
+    font-weight: bold;
 }
 
 h1 span, h2 span, p span, img, iframe, a, .flag-bar, .cuisine, .mythology, .person {
@@ -258,6 +275,7 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
     border-start-end-radius: 150px 50%;
     overflow: hidden;
     margin-block: 5vh;
+    background-blend-mode: overlay;
 }
 
 /* https://www.w3schools.com/TAgs/att_dir.asp */
@@ -268,7 +286,6 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
     margin-top: 0vh;
     margin-bottom: 3vh;
 }
-
 
 
 
@@ -422,49 +439,66 @@ iframe:hover {
 
 
 
-
 .flip-card {
-  background-color: transparent;
-  width: 100%;
-  perspective: 1000px;
-  aspect-ratio: 2/2.5;
-  border-radius: 10%;
+    background-color: transparent;
+    perspective: 1000px;
+    aspect-ratio: 2/2.5;
+    border-radius: 10%;
+    margin-block: 2%;
+    margin-inline: auto;
+}
+
+.col-md-6 .flip-card {
+    width: 90%;
+}
+
+.col-12 .flip-card {
+    width: 90%;
+}
+
+.col-md-3 .flip-card {
+    width: 100%;
+}
+
+.col-6 .flip-card {
+    width: 100%;
 }
 
 .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-  border-radius: 10%;
-  background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 10%;
+    background-size: cover;
 }
 
 .flip-card-front {
-  color: black;
+    color: black;
+    box-shadow: 0 4px 12px;
 }
 
 .flip-card-back {
-  background-color: #222222;
-  background-blend-mode: overlay;
-  color: white;
-  width: 100%;
-  height: 100%;
-  transform: rotateY(180deg);
+    background-color: #222222;
+    background-blend-mode: overlay;
+    color: white;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
 } 
 
 .flip-card-back h1 {
@@ -475,12 +509,24 @@ iframe:hover {
     font-weight: bold;
 }
 
-.flip-card-back p {
+.col-md-6 .flip-card-back h1, .col-6 .flip-card-back h1, .col-12 .flip-card-back h1 {
+    font-size: max(10vh, 50px);
+}
+
+.col-md-3 .flip-card-back h1 {
+    font-size: max(5vh, 25px);
+}
+
+.col-md-6 .flip-card-back p, .col-6 .flip-card-back p, .col-12 .flip-card-back p {
     font-size: clamp(10px, 5vw, 30px);
 }
 
+.col-md-3 .flip-card-back p {
+    font-size: clamp(5px, 2.5vw, 15px);
+}
+
 button {
-    width: clamp(10px, 10vw, 100px);
+    width: clamp(20px, 20%, 100px);
     aspect-ratio: 1;
     border-radius: 100px;
     display:flex;
@@ -499,7 +545,7 @@ button {
 }
 
 button img {
-    width: clamp(10px, 10vw, 100px);
+    width: 100%;
     transition: 0.4s;
 }
 
