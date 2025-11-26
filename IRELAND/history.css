@@ -2,20 +2,18 @@ body {
     background-image: url("../IMAGES/history_background.jpg");
 }
 
-p {
-    font-size: 20px;
-}
-
-h2 {
-    font-family: Arial;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 25px !important;
+.album p {
+    font-size: 18px !important;
 }
 
 footer {
     background-color: black !important;
     color: white !important;
+}
+
+
+.album h2 {
+    text-decoration: underline;
 }
 
 .card-img-top {
@@ -51,9 +49,4 @@ footer {
 .title_container h1 {
     font-size: 40px;
     font-weight: bold !important;
-}
-
-h1, h2, h3, h4, h5, p {
-    font-family:Arial, Helvetica, sans-serif !important;
-    font-weight: normal !important;
 }

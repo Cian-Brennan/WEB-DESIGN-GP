@@ -6,6 +6,7 @@
 /*Grid and Flex box was learned from the youtube channel 'Coding2Go'*/
 /* Remove background-color at end*/
 /* Only problem is that the curve of the border looks weird when you shrink the height of the viewport too much.*/
+
 .page-nav {
     height: 70px;
     box-shadow: 0 2px 10px;
@@ -121,4 +122,33 @@ footer {
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
+}
+
+h1, h2, h3, h4, h5, p {
+    font-family:Arial, Helvetica, sans-serif !important;
+    font-weight: normal !important;
+}
+
+h1 {
+    font-size: 40px !important;
+}
+
+h2 {
+    font-size: 35px !important;
+}
+
+h3 {
+    font-size: 28px !important;
+}
+
+h4 {
+    font-size: 20px !important;
+}
+
+h5 {
+    font-size: 15px !important;
+}
+
+p {
+    font-size: 20px !important;
 }
