@@ -166,11 +166,11 @@ h1 span, h2 span, p span, img, iframe, a {
     display: inline-block;
     transition: 0.5s;
 }
-
 /* end of nav css */
 
 body {
-    background-image: url("../IMAGES/history_background.jpg");
+    background-image: url("../IMAGES/places_background.jpg");
+    margin: 0;
 }
 
 p {
@@ -185,29 +185,46 @@ h2 {
 }
 
 footer {
-    background-color: black;
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    font-size: 50px !important;
+}
+
+p, ul{
+    font-size: 20px !important;
+}
+
+.container img {
+    border-radius: 50px;
+    border: 2px solid white;
+    height: 300px;
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.container {
+    width: 600px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    background-color: #1353b3;
+    border-radius: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+h1, h2, p {
     color: white;
 }
 
-.card-img-top {
-    height: 250px !important;
-    object-fit: cover !important;
-    width: 100 !important;
-}
-
-.card-body {
-    text-align: center;
-    flex: 1 !important;
-    overflow-y: auto;
-}
-
-.card {
-    height: 600px !important;
-    max-height: 820px !important;
-}
-
 .title_container {
-    width: 600px;
+    width: 500px;
     text-align: center;
     display: block;
     margin: 0 auto;
@@ -216,15 +233,41 @@ footer {
     padding-bottom: 15px;
     padding-top: 15px;
     margin-top: 40px;
-    border: 4px solid black;
+    margin-bottom: 20px;
+    border: 4px solid #489792;
 }
 
 .title_container h1 {
     font-size: 40px;
     font-weight: bold !important;
+    color: black;
 }
 
 h1, h2, h3, h4, h5, p {
     font-family:Arial, Helvetica, sans-serif !important;
     font-weight: normal !important;
+}
+
+h1 {
+    font-size: 40px !important;
+}
+
+h2 {
+    font-size: 35px !important;
+}
+
+h3 {
+    font-size: 28px !important;
+}
+
+h4 {
+    font-size: 20px !important;
+}
+
+h5 {
+    font-size: 15px !important;
+}
+
+p {
+    font-size: 20px !important;
 }

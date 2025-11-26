@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Culture Homepage</title>
+	<link rel="stylesheet" href="culture.css" /> 
+</head>
+
+<body style="background-image: url(./IMAGES/Index_Background.jpg); padding-top: 50px;">
+<section class="flag-bar">
+        <a href="/WEB-DESIGN-GP/Albania"><img src="IMAGES/Albanian Flag.svg" alt="Albanian Flag"></a>
+        <a href="/WEB-DESIGN-GP/China"><img src="IMAGES/Chinese Flag.svg" alt="Chinese Flag"></a>
+        <a href="/WEB-DESIGN-GP/India"><img src="IMAGES/Indian Flag.svg" alt="Indian Flag"></a>
+        <a href="/WEB-DESIGN-GP/Ireland"><img src="IMAGES/Irish Flag.svg" alt="Irish Flag"></a>
+        <a href="/WEB-DESIGN-GP/Ukraine/"><img src="IMAGES/Ukrainian Flag.svg" alt="Ukrainian Flag"></a>
+</section>
+<nav class="culture-nav">
+    <ul>
+        <li><a href="./"><img src="/WEB-DESIGN-GP/IMAGES/Home_Icon.png"></a></li>
+    </ul>
+</nav>
+
+
+
+
+<!-- Sign Up Form Section -->
+  <div class="signup-section">
+    <div class="form-title">
+      <h2>Sign Up</h2>
+      <p>Fill in the form to join us.</p>
+    </div>
+
+    <div class="form-box">
+      <form id="pollForm" onsubmit="submitPoll(event)">
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your name">
+        </div>
+
+        <!-- Age -->
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required placeholder="Enter your age">
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+
+        <!-- Subscribe Option -->
+        <div class="form-group">
+          <label>Subscribe to Newsletter?</label>
+          <input type="radio" id="subscribeYes" name="subscribe" value="true" checked>
+          <label for="subscribeYes">Yes</label>
+          <input type="radio" id="subscribeNo" name="subscribe" value="false">
+          <label for="subscribeNo">No</label>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+          <button type="submit" class="cta-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  </body>
+</html>
