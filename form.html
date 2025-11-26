@@ -3,72 +3,65 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Portfolio" />
+    <meta name="description" content="Ukrainian Figures" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Culture Homepage</title>
-	<link rel="stylesheet" href="culture.css" /> 
+    <title>Ukrainian Figures</title>
+	<link rel="stylesheet" href="universal.css" /> 
+    <link rel="stylesheet" href="index.css" /> 
 </head>
-
-<body style="background-image: url(./IMAGES/Index_Background.jpg); padding-top: 50px;">
-<section class="flag-bar">
-        <a href="/WEB-DESIGN-GP/Albania"><img src="IMAGES/Albanian Flag.svg" alt="Albanian Flag"></a>
-        <a href="/WEB-DESIGN-GP/China"><img src="IMAGES/Chinese Flag.svg" alt="Chinese Flag"></a>
-        <a href="/WEB-DESIGN-GP/India"><img src="IMAGES/Indian Flag.svg" alt="Indian Flag"></a>
-        <a href="/WEB-DESIGN-GP/Ireland"><img src="IMAGES/Irish Flag.svg" alt="Irish Flag"></a>
-        <a href="/WEB-DESIGN-GP/Ukraine/"><img src="IMAGES/Ukrainian Flag.svg" alt="Ukrainian Flag"></a>
-</section>
+<header>
+<nav class="page-nav" style="background-color: #222222;">
+    <ul>
+        <li><a href="/WEB-DESIGN-GP/" style="background-image: url(/WEB-DESIGN-GP/IMAGES/Home_Background.jpg);"><img src="/WEB-DESIGN-GP/IMAGES/Home.png" alt="Home Button" style="width: 50px;"></a></li>
+        <li><a href="/WEB-DESIGN-GP/Albania" style="background-image: url(/WEB-DESIGN-GP/IMAGES/Albania.jpg);"><img src="/WEB-DESIGN-GP/IMAGES/Albanian Flag.svg" alt="Albanian Flag"></a></li>
+        <li><a href="/WEB-DESIGN-GP/China" style="background-image: url(/WEB-DESIGN-GP/IMAGES/China.jpg);"><img src="/WEB-DESIGN-GP/IMAGES/Chinese Flag.svg" alt="Chinese Flag"></a></li>
+        <li><a href="/WEB-DESIGN-GP/India" style="background-image: url(/WEB-DESIGN-GP/IMAGES/India.jpg);"><img src="/WEB-DESIGN-GP/IMAGES/Indian Flag.svg" alt="Indian Flag"></a></li>
+        <li><a href="/WEB-DESIGN-GP/Ukraine/" style="background-image: url(/WEB-DESIGN-GP/IMAGES/Ukraine.jpg);"><img src="/WEB-DESIGN-GP/IMAGES/Ukrainian Flag.svg" alt="Ukrainian Flag"></a></li>
+    </ul>
+</nav>
 <nav class="culture-nav">
     <ul>
         <li><a href="./"><img src="/WEB-DESIGN-GP/IMAGES/Home_Icon.png"></a></li>
     </ul>
 </nav>
+</header>
+<body style="background-image: url(./IMAGES/Index_Background.jpg); padding-top: 50px;">
 
+<div class="form_container">
+        <div class="form-title">
+        <h2>Contact Us</h2>
+        <p>Fill in the form to contact us.</p>
+        </div>
 
+        <div class="form-box">
+        <form id="pollForm">
+            <!-- Name -->
+            <div class="form-group">
+            <label>Name:</label>
+            <input type="text" id="name" required placeholder="Enter your name">
+            </div>
 
+            <!-- Number -->
+            <div class="form-group">
+            <label>Number:</label>
+            <input type="digits" id="age" required placeholder="Enter your age">
+            </div>
 
-<!-- Sign Up Form Section -->
-  <div class="signup-section">
-    <div class="form-title">
-      <h2>Sign Up</h2>
-      <p>Fill in the form to join us.</p>
+            <!-- Email -->
+            <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="Enter your email">
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="cta-btn">Submit</button>
+            </div>
+        </form>
     </div>
-
-    <div class="form-box">
-      <form id="pollForm" onsubmit="submitPoll(event)">
-        <!-- Name -->
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required placeholder="Enter your name">
-        </div>
-
-        <!-- Age -->
-        <div class="form-group">
-          <label for="age">Age:</label>
-          <input type="number" id="age" name="age" required placeholder="Enter your age">
-        </div>
-
-        <!-- Email -->
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required placeholder="Enter your email">
-        </div>
-
-        <!-- Subscribe Option -->
-        <div class="form-group">
-          <label>Subscribe to Newsletter?</label>
-          <input type="radio" id="subscribeYes" name="subscribe" value="true" checked>
-          <label for="subscribeYes">Yes</label>
-          <input type="radio" id="subscribeNo" name="subscribe" value="false">
-          <label for="subscribeNo">No</label>
-        </div>
-
-        <!-- Submit Button -->
-        <div class="form-group">
-          <button type="submit" class="cta-btn">Submit</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
+</div>
+ <footer>
+    <p>Footer</p>
+  </footer>
   </body>
 </html>
