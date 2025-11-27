@@ -6,7 +6,7 @@ html {
     background-color: #1d2327;
 }
 
-body {
+.china body {
     
     background-color: #444444;
     background-blend-mode: overlay;
@@ -18,46 +18,46 @@ body {
     background-attachment: fixed;
 }
 
-header {
+.china header {
     margin:0%;
     width: 100%;
     top: 0;
 }
 
-footer {
+.china footer {
     background-color: #1d2327;
     color: white;
     padding-bottom: 5px;
     margin-top: 20px;
 }
 
-footer a {
+.china footer a {
     color: #CCCCCC;
 }
 
-footer p {
+.china footer p {
     font-family: sans-serif;
     font-size: 20px;
 }
 
-p {
+.china p {
     grid-area: P;
     font-family: Calibri;
     font-size: 30px;
     direction: ltr;
 }
 
-p, h1 {
+.china p, .china h1 {
     margin-inline: 1rem;
     margin-block: 0;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
-h1 {
+.china h1 {
     text-align:center;
 }
 
-h1 span{
+.china h1 span{
     font-size: clamp(2rem, 8vw, 80px);
     font-family: 'goudy old style';
     grid-area: H;
@@ -67,12 +67,12 @@ h1 span{
     font-weight: bold;
 }
 
-h1 span, h2 span, p span, img, iframe, a, .flag-bar, .cuisine, .mythology, .person {
+.china h1 span, .china h2 span, .china p span, .china img, .china iframe, a, .china .flag-bar, .china .cuisine, .china .mythology, .china .person {
     display: inline-block;
     transition: 0.5s;
 }
 
-h2 {
+.china h2 {
     font-family: 'Gill Sans MT';
     font-size: clamp(2rem, 8vw, 100px);
     text-decoration: underline;
@@ -83,29 +83,29 @@ h2 {
     text-shadow: 2px 2px 8px black;
 }
 
-h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hover {
+.china h2 span:hover, .china .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hover {
     transition: 0.5s;
     transform: scale(1.05);
 }
 
-.cuisine:hover, h1 span:hover, p span:hover, .mythology:hover, .mythology img:hover, .person:hover, .people h1:hover {
+.china .cuisine:hover, .china h1 span:hover, .china p span:hover, .china .mythology:hover, .china .mythology img:hover, .china .person:hover, .china .people h1:hover {
     transition: 0.5s;
     transform: scale(1.02);
 }
 
-.cuisine, .mythology, .mythology img, .flag-bar, .people {
+.china .cuisine, .china .mythology, .china .mythology img, .china .flag-bar, .china .people {
     border-radius: 50px;
     box-shadow: 0 4px 12px;
 }
 
-.mythology img, .cuisine img {
+.china .mythology img, .china .cuisine img {
     grid-area: I;
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.image-background {
+.china .image-background {
     margin:0;
     width: 100%;
     height: 100%;
@@ -120,14 +120,14 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
 
 
 /*When changing the height of this change the padding-top of the body to match it.*/
-.page-nav {
+.china .page-nav {
     height: 70px;
     box-shadow: 0 2px 10px;
     margin-bottom: 10px;
         background-color: rgba(0, 0, 0, 0.8);
 }
 
-.page-nav ul {
+.china .page-nav ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -137,18 +137,18 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
     height: 100%;
 }
 
-.page-nav li {
+.china .page-nav li {
     flex: 1;
     height: 100%;
 }
 
-.page-nav img {
+.china .page-nav img {
     width: 70px;
     height: 50px;
     border-radius: 15px;
 }
 
-.page-nav a {
+.china .page-nav a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,7 +159,7 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
     background-size: 20%;
 }
 
-.page-nav a:hover {
+.china .page-nav a:hover {
     background-color: #777777;
     box-shadow: 0 2px 10px black;
 }
@@ -173,7 +173,7 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
 
 
 
-.culture-nav {
+.china .culture-nav {
     display: flex;
     margin-inline: auto;
     margin-bottom: 2%;
@@ -189,7 +189,7 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
     font-size: 25px;
 }
 
-.culture-nav ul {
+.china .culture-nav ul {
     display: flex;
     list-style: none;
     padding: 0;
@@ -197,23 +197,23 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
     width: 100%;
 }
 
-.culture-nav li {
+.china .culture-nav li {
     flex: 1;
 }
 
-.culture-nav a {
+.china .culture-nav a {
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: center;
 }
 
-.culture-nav a:hover {
+.china .culture-nav a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 2px 10px black;
 }
 
-.culture-nav img{
+.china .culture-nav img{
     height: 80%;
     filter: invert(100%);
 }
@@ -226,7 +226,7 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
 
 
 
-.flag-bar {
+.china .flag-bar {
     max-width: 900px;
     margin-inline: auto;
     display: flex;
@@ -238,13 +238,13 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
     padding-block: 20px;
 }
 
-.flag-bar img {
+.china .flag-bar img {
     align-items: center;
     height: 100px;
     width: 140px;
 }
 
-.flag-bar a {
+.china .flag-bar a {
     display: flex;
     justify-content: center;
     height: 100px;
@@ -253,7 +253,7 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
     overflow: hidden;
 }
 
-.flag-bar a:hover {
+.china .flag-bar a:hover {
     box-shadow: 0 2px 10px black;
 }
 
@@ -265,7 +265,7 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
 
 
 
-.cuisine {
+.china .cuisine {
     display: grid;
     margin: 2%;
     grid-template-columns: 60% 40%;
@@ -281,7 +281,7 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
 
 /* https://www.w3schools.com/TAgs/att_dir.asp */
 
-.cuisine p {
+.china .cuisine p {
     margin-inline-start: 1.7vh;
     margin-inline-end: 1.05em;
     margin-top: 0vh;
@@ -293,7 +293,7 @@ h2 span:hover, .page-nav a:hover, .flag-bar a:hover, .flag-bar:hover, iframe:hov
 
 
 
-iframe {
+.china iframe {
     display: flex;
     margin: auto;
     width: 70vw;
@@ -302,7 +302,7 @@ iframe {
     margin-top: 2.5vw;
 }
 
-iframe:hover {
+.china iframe:hover {
     border-radius: 0px;
 }
 
@@ -315,7 +315,7 @@ iframe:hover {
 
 
 
-.people ul{
+.china .people ul{
     display: grid;
     grid-auto-columns: 300px;
     grid-auto-rows: 300px;
@@ -330,7 +330,7 @@ iframe:hover {
 
 
 
-.mythology {
+.china .mythology {
     display: grid;
     margin: 2%;
     gap: 10px;
@@ -343,14 +343,14 @@ iframe:hover {
     padding: 2%;
 }
 
-.mythology p {
+.china .mythology p {
     margin: 0;
     width: min(100%, 550px);
 }
 
 /* https://www.w3schools.com/cssref//func_clamp.php */
 
-.mythology img {
+.china .mythology img {
     width: min(100%, 550px);
 }
 
@@ -373,26 +373,26 @@ iframe:hover {
 
 
 
-.people {
+.china .people {
     background-color: rgba(0, 0, 0, 0.5);
     margin-block: 5vh;
     margin-inline: 1.5vw;
     font-size: clamp(1.2rem, 6vw, 30px);
 }
 
-.people h1 {
+.china .people h1 {
     color: white;
     text-decoration: underline;
     font-family: Tahoma, sans-serif;
 }
 
-.people-reel {
+.china .people-reel {
     display: flex;
     flex-wrap: nowrap;
     overflow: scroll;
 }
 
-.person {
+.china .person {
     border-radius: 10px;
     min-width: 300px;
     margin: 2%;
@@ -400,27 +400,27 @@ iframe:hover {
     overflow: hidden;
 }
 
-.person:nth-child(odd) {
+.china .person:nth-child(odd) {
     background-color: white;
     color: black;
 }
 
-.person:nth-child(even) {
+.china .person:nth-child(even) {
     background-color: black;
     color: white;
 }
 
-.person img {
+.china .person img {
     width: 300px;
 }
 
-.person .person-caption {
+.china .person .person-caption {
     padding: 7px;
     font-family: sans-serif;
     font-size: 20px;
 }
 
-.home_page_container {
+.china .home_page_container {
     width: 90%;           /* Make the container 90% of the screen width */
     max-width: 600px;     /* Set a maximum width for larger screens */
             
@@ -433,18 +433,18 @@ iframe:hover {
     color: white;
 }
 
-.home_page_container p {
+.china .home_page_container p {
     margin-top: 20px;
 }
 
-.home_page_container h2 {
+.china .home_page_container h2 {
     font-size: 40px;
     text-decoration: none;
     font-weight: none;
     text-transform: none;
 }
 
-.home_page_container h3 {
+.china .home_page_container h3 {
     font-size: 30px;
     text-decoration: underline;
     font-weight: none;
@@ -461,7 +461,7 @@ iframe:hover {
 
 
 
-.flip-card {
+.china .flip-card {
     background-color: transparent;
     perspective: 1000px;
     aspect-ratio: 2/2.5;
@@ -470,23 +470,23 @@ iframe:hover {
     margin-inline: auto;
 }
 
-.col-md-6 .flip-card {
+.china .col-md-6 .flip-card {
     width: 90%;
 }
 
-.col-12 .flip-card {
+.china .col-12 .flip-card {
     width: 90%;
 }
 
-.col-md-3 .flip-card {
+.china .col-md-3 .flip-card {
     width: 100%;
 }
 
-.col-6 .flip-card {
+.china .col-6 .flip-card {
     width: 100%;
 }
 
-.flip-card-inner {
+.china .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -495,11 +495,11 @@ iframe:hover {
     transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.china .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.china .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -509,12 +509,12 @@ iframe:hover {
     background-size: cover;
 }
 
-.flip-card-front {
+.china .flip-card-front {
     color: black;
     box-shadow: 0 4px 12px;
 }
 
-.flip-card-back {
+.china .flip-card-back {
     background-color: #222222;
     background-blend-mode: overlay;
     color: white;
@@ -523,7 +523,7 @@ iframe:hover {
     transform: rotateY(180deg);
 } 
 
-.flip-card-back h1 {
+.china .flip-card-back h1 {
     font-family: 'goudy old style';
     margin-inline: 0.5em;
     margin-top: 0.5em;
@@ -532,52 +532,52 @@ iframe:hover {
     font-weight: bold;
 }
 
-.flip-card p {
+.china .flip-card p {
     margin-block: 0em;
     margin-inline: 0.5em;
 }
 
-.col-md-3 .flip-card-back h1 {
+.china .col-md-3 .flip-card-back h1 {
     font-size: clamp(18px, 2.5vw, 30px);
 }
 
 @media (max-width: 767.98px) {
-    .col-6 .flip-card-back h1 {
+    .china .col-6 .flip-card-back h1 {
         font-size: clamp(1px, 60vw, 25px);
     }
 }
 
-.col-md-6 .flip-card-back h1 {
+.china .col-md-6 .flip-card-back h1 {
     font-size: clamp(40px, 4.5vw, 80px);
 }
 
 @media (max-width: 767.98px) {
-    .col-12 .flip-card-back h1 {
+    .china .col-12 .flip-card-back h1 {
         font-size: clamp(40px, 8vw, 60px);
     }
 }
 
-.col-md-6 .flip-card-back p {
+.china .col-md-6 .flip-card-back p {
     font-size: clamp(18px, 2vw, 50px);
 }
 
 @media (max-width: 767.98px) {
-    .col-12 .flip-card-back p {
+    .china .col-12 .flip-card-back p {
         font-size: clamp(20px, 5.5vw, 28px);
     }
 }
 
-.col-md-3 .flip-card-back p {
+.china .col-md-3 .flip-card-back p {
     font-size: clamp(8.5px, 1.12vw, 16px);
 }
 
 @media (max-width: 767.98px) {
-    .col-6 .flip-card-back p {
+    .china .col-6 .flip-card-back p {
         font-size: clamp(12px, 3.5vw, 13px);
     }
 }
 
-button {
+.china button {
     width: clamp(20px, 20%, 100px);
     aspect-ratio: 1;
     border-radius: 100px;
@@ -586,7 +586,7 @@ button {
     align-items: center;
 }
 
-.flip-card-back button {
+.china .flip-card-back button {
     position: absolute;
     bottom: 2%;
     align-self: left;
@@ -596,17 +596,17 @@ button {
     border: none;
 }
 
-button img {
+.china button img {
     width: 100%;
     transition: 0.4s;
 }
 
-button img:hover {
+.china button img:hover {
     transform: scale(1.15);
     transition: 0.4s;
 }
 
-#myVideo {
+.china #myVideo {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -615,9 +615,1304 @@ button img:hover {
   object-fit: cover;
 }
 
-.content {
+.china .content {
   position:relative;
   bottom: 0;
   width: 100%;
 }
 
+
+
+
+/*///////////////////////////////////////////////////////////////
+INDIA
+/////////////////////////////////////////////////////////////*/
+/* india1.css */
+
+/* General Reset */
+.india * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body with Indian flag gradient and shadowed container */
+.india body:not(.china) {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #FF9933 33%, #FFFFFF 34%, #FFFFFF 66%, #138808 67%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 20px;
+    color: #000;
+}
+
+/* Add soft glow around content */
+.india body::before:not(.china) {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+
+/* Header Styling */
+.india header:not(.china) {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+}
+
+.india header h1 {
+    font-size: 2.8rem;
+    color: #000080;
+    /* navy blue */
+}
+
+.india header p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Navigation Bar */
+.india nav:not(.china) {
+    margin: 30px 0;
+    background: #000080;
+    /* navy blue */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.india nav ul:not(.china) {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.india nav li:not(.china) {
+    margin: 0;
+}
+
+.india nav a {
+    display: block;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.india nav a:hover {
+    background: #FF9933;
+    color: #000;
+}
+
+/* Image Styling */
+.india img {
+    width: 60%;
+    max-width: 400px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.india img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* YouTube Link Styling */
+.india a[href*="youtube"] {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background: #000080;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.india a[href*="youtube"]:hover {
+    background: #FF9933;
+    color: #000;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .india header h1 {
+        font-size: 2rem;
+    }
+
+    .india nav a {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+
+    .india img {
+        width: 80%;
+    }
+}
+
+/* General Styles */
+.india_cuisine body:not(.china) {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  /* Indian flag colors background: Saffron → White → Green */
+  background: linear-gradient(to bottom, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Header */
+.india_cuisine header:not(.china) {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  margin: 1rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.india_cuisine header h1 {
+  margin-bottom: 0.5rem;
+  color: #FF9933;
+}
+
+.india_cuisine header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Cuisine Grid */
+.india_cuisine .cuisine-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Individual Cuisine Card */
+.india_cuisine .cuisine-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.india_cuisine .cuisine-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+.india_cuisine .cuisine-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 4px solid #FF9933; /* subtle accent border with saffron */
+}
+
+.india_cuisine .cuisine-card h2 {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: #138808; /* green from the flag */
+}
+
+.india_cuisine .cuisine-card p {
+  margin: 0 1rem 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Footer */
+.india_cuisine footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  margin: 1rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  font-size: 1.1rem;
+  color: #000080; /* navy blue for Ashoka Chakra inspiration */
+}
+
+/* ========== Base & Font ========== */
+.india_language body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #333;
+    background: linear-gradient(to bottom, #ff9933 0%, #fff 50%, #138808 100%);
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Add a faint overlay image of Indian scripts/patterns */
+.india_language body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/57/Devanagari_sample.svg");
+    background-repeat: repeat;
+    background-size: 400px;
+    opacity: 0.05;
+    /* faint, so it doesn't distract */
+    z-index: -1;
+    filter: contrast(120%) brightness(120%);
+}
+
+/* ========== Header ========== */
+.india_language header {
+    text-align: center;
+    background: rgba(255, 153, 51, 0.9);
+    color: white;
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.india_language header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.india_language header p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+/* ========== Grid Layout ========== */
+.india_language .languages-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    z-index: 1;
+    position: relative;
+}
+
+/* ========== Language Card ========== */
+.india_language .language-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.india_language .language-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.india_language .language-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 200px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+
+.india_language .language-card h2 {
+    color: #ff9933;
+    margin: 1rem 0 0.5rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.india_language .language-card p {
+    padding: 0 1rem 1.5rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* ========== Footer ========== */
+.india_language footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(19, 136, 8, 0.9);
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* General Styles */
+.india_people body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  /* Background in Indian flag colors */
+  background: linear-gradient(to bottom, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+  color: #333;
+  min-height: 100vh;
+}
+
+.india_people .flex {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Shadowed Content Wrapper */
+.india_people main,
+.india_people header,
+.india_people footer {
+  width: 90%;
+  max-width: 1200px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  margin: 1rem 0;
+}
+
+/* Header */
+.india_people header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.india_people header h1 {
+  margin-bottom: 0.5rem;
+  color: #FF9933;
+  /* saffron */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.india_people header p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* People Grid */
+.india_people .people-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Individual Person Card */
+.india_people .person-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.india_people .person-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.india_people .person-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 4px solid #FF9933;
+  /* saffron accent */
+}
+
+.india_people .person-card h2 {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: #138808;
+  /* green from flag */
+}
+
+.india_people .person-card p {
+  margin: 0 1rem 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Footer */
+.india_people footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: #000080;
+  /* navy blue (Ashoka Chakra) */
+}
+
+/* =========================
+   General Styles
+========================= */
+.india_places body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    line-height: 1.5;
+    background: linear-gradient(to bottom, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+    color: #333;
+}
+
+/* =========================
+   Header
+========================= */
+.india_places header {
+    text-align: left;
+    padding: 1.2rem 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 0 10px 10px 0;
+    width: fit-content;
+    margin: 1rem 0;
+    width: auto;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.india_places header h1 {
+    color: #FF9933;
+    margin: 0 0 0.3rem;
+    font-size: 1.8rem;
+}
+
+.india_places header p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* =========================
+   Monuments Container
+========================= */
+.india_places .monuments-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+}
+
+/* =========================
+   Monument Card
+========================= */
+.india_places .monument-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    padding: 1rem;
+    text-align: center;
+}
+
+.india_places .monument-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Larger and Clearer Images */
+.india_places .monument-card img {
+    width: 120px;
+    /* clearer and larger size */
+    height: auto;
+    border-radius: 8px;
+    border: 1.5px solid #FF9933;
+    display: block;
+    margin: 0 auto 0.8rem;
+}
+
+/* =========================
+   Text
+========================= */
+.india_places .monument-card h2 {
+    color: #138808;
+    font-size: 1.1rem;
+    margin: 0.3rem 0;
+}
+
+.india_places .monument-card p {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* =========================
+   Footer
+========================= */
+.india_places footer {
+    text-align: left;
+    padding: 0.8rem 2rem;
+    font-size: 0.85rem;
+    color: #000080;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   General Styles
+========================= */
+.india_mythology body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #FF9933 0%, #FFF8E1 50%, #138808 100%);
+    color: #2E2E2E;
+}
+
+/* =========================
+   Header
+========================= */
+.india_mythology header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #FF9933;
+}
+
+.india_mythology header h1 {
+    color: #B22222;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.india_mythology header p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* =========================
+   Deities Container
+========================= */
+.india_mythology .deities-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* =========================
+   Deity Card
+========================= */
+.india_mythology .deity-card {
+    background-color: #fffdf5;
+    border: 2px solid #FFD54F;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.india_mythology .deity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Larger, Clear Images */
+.india_mythology .deity-card img {
+    width: 140px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #FF9933;
+    margin-bottom: 0.8rem;
+}
+
+/* Text Styling */
+.india_mythology .deity-card h2 {
+    color: #B22222;
+    font-size: 1.2rem;
+    margin: 0.3rem 0;
+}
+
+.india_mythology .deity-card p {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* ===Footer==== */
+.india_mythology footer {
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 0.85rem;
+    color: #000080;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-top: 3px solid #FF9933;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////
+ALBANIA
+///////////////////////////////////////////////////////////////////////////////////////////////*/
+.albania html {
+    background-color: #1d2327;
+}
+
+.albania body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1d2327;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+
+.albania main {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #132d42;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+  text-align: justify;
+
+  background-image: url("../images/albania-flag.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.albania main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.albania .overview h1 {
+  font-size: clamp(28px, 4vw, 42px);
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.albania .overview p {
+  text-align: justify;
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+.albania .overview strong,
+.albania .overview em {
+  color: #ffd166;
+}
+
+
+
+
+
+.albania .page-nav {
+    height: 70px;
+    box-shadow: 0 2px 10px;
+    margin-bottom: 10px;
+}
+
+.albania .page-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.albania .page-nav li {
+    flex: 1;
+    height: 100%;
+}
+
+.albania .page-nav img {
+    width: 70px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.albania .page-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: #222222;
+    background-blend-mode: overlay;
+    background-position-y: center;
+    outline: 0px solid black;
+}
+
+.albania .page-nav a:hover {
+    background-color: #777777;
+    box-shadow: 0 2px 10px black;
+}
+
+
+
+
+
+
+.albania .culture-nav {
+    display: flex;
+    margin:auto;
+    justify-content: space-evenly;
+    height: 40px;
+    box-shadow: 0 2px 10px;
+    max-width: 600px;
+    width:100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: calibri;
+    font-size: 25px;
+}
+
+.albania .culture-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.albania .culture-nav li {
+    flex: 1;
+}
+
+.albania .culture-nav a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.albania .culture-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 10px black;
+}
+
+.albania .culture-nav img{
+    height: 25px;
+    filter: invert(100%);
+}
+
+.albania .fun-facts {
+    width: 70%;
+    margin: 3rem auto;
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+}
+
+.albania .fun-facts h2 {
+    text-align: center;
+    color: #ff4b4b;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.albania .fact {
+    background: #2c2c2c;
+    border-left: 5px solid #e63946;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.albania .fact:hover {
+    background: #333;
+    transform: scale(1.02);
+}
+
+.albania .fact h3 {
+    color: #ff4b4b;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.albania .fact p {
+    color: #ddd;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+
+.albania .overview {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.albania .overview:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(230, 57, 70, 0.6);
+}
+
+
+.albania h1 {
+text-align: center;
+font-size: 3rem;
+margin-top: 40px;
+margin-bottom: 10px;
+font-weight: 700;
+letter-spacing: 2px;
+color: #f5f5f5;
+background: linear-gradient(to right, #ff3e3e, #ffd256);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow: 0 4px 12px rgba(0,0,0,0.45);
+}
+
+.albania h1 + p {
+text-align: center;
+max-width: 850px;
+margin: 0 auto 45px auto;
+color: #dcdcdc;
+font-size: 1.15rem;
+line-height: 1.7;
+padding: 5px 10px;
+opacity: 0.9;
+}
+
+.albania .food-card {
+background: #2b2b2b;
+width: 85%;
+margin: 28px auto;
+padding: 22px;
+border-radius: 14px;
+display: grid;
+grid-template-columns: 160px 1fr;
+gap: 18px 22px;
+align-items: start;
+
+box-shadow: 0 4px 14px rgba(0,0,0,0.28);
+transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.albania .food-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 10px 30px rgba(0,0,0,0.36);
+}
+
+.albania .food-photo img {
+width: 160px;
+height: 140px;
+object-fit: cover;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+display: block;
+}
+
+.albania .food-card h2 {
+margin: 0 0 8px;
+font-size: 1.4rem;
+color: #FF0000;
+line-height: 1.1;
+font-weight: 600;
+text-shadow: 0 1px 0 rgba(0,0,0,0.35);
+}
+
+.albania .food-card p {
+margin: 0;
+padding-top: 6px;
+color: #e6e6e6;
+line-height: 1.7;
+font-size: 0.98rem;
+letter-spacing: 0.14px;
+max-width: 100%;
+}
+
+
+.albania .food-card > h2,
+.albania .food-card > p {
+grid-column: 2;
+}
+
+.albania .video-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.albania .video-container iframe {
+  width: 100%;
+  height: 500px;
+  display: block;
+  border-radius: 10px;
+}
+
+.albania .video-container iframe {
+  width: 100%;
+  height: 500px;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.albania .video-container iframe:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+}
+
+@media (max-width: 700px) {
+.albania .food-card {
+grid-template-columns: 1fr;
+padding: 20px;
+gap: 12px;
+text-align: left;
+}
+
+
+.albania .food-photo img {
+width: 100%;
+height: auto;
+max-height: 260px;
+}
+
+.albania .food-card h2 {
+font-size: 1.25rem;
+}
+}
+
+
+.albania .title-box {
+    width: fit-content;
+    margin: 20px auto 30px auto;
+    padding: 12px 25px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+
+    transition: 0.35s;
+    box-shadow: 0 0 0 rgba(0, 150, 255, 0);
+}
+
+.albania .title-box:hover {
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.6);
+    border-color: rgba(0, 150, 255, 0.8);
+    transform: translateY(-3px);
+}
+
+.albania .box-wrapper {
+width: 70%;
+margin: 40px auto;
+display: flex;
+flex-direction: column;
+gap: 25px;
+}
+
+
+.albania .info-box {
+background: rgba(255, 255, 255, 0.06);
+padding: 25px;
+border-radius: 15px;
+border: 1px solid rgba(255, 255, 255, 0.15);
+color: #e6e6e6;
+font-size: 1.05rem;
+line-height: 1.6;
+
+backdrop-filter: blur(5px);
+transition: 0.35s ease;
+
+box-shadow: 0 0 0 rgba(0, 140, 255, 0);
+}
+
+.albania .info-box:hover {
+transform: translateY(-4px);
+box-shadow: 0 0 18px rgba(0, 140, 255, 0.6);
+border-color: rgba(0, 140, 255, 0.7);
+}
+
+.albania .box-wrapper h1 {
+text-align: center;
+margin-bottom: 10px;
+}
+
+.albania .title-box {
+    color: #ff3b3b;
+    border-color: rgba(255, 59, 59, 0.6);
+}
+
+.albania .title-box:hover {
+    box-shadow: 0 0 18px rgba(255, 59, 59, 0.7);
+    border-color: rgba(255, 59, 59, 1);
+}
+
+.albania .info-box h2 {
+    color: #ff6464;
+}
+
+.albania .image-grid {
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.albania .image-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.35s;
+}
+
+.albania .image-grid img:hover {
+    box-shadow: 0 0 18px rgba(255, 59, 59, 0.7);
+    transform: scale(1.03);
+}
+
+
+.albania .content-box {   max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(8px);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 25px rgba(90, 110, 255, 0.15);
+    animation: fadeIn 0.7s ease;
+}
+
+.albania .content-box h1,
+.albania .content-box h2,
+.albania .content-box h3 {
+    color: #d3dbff;
+    margin-top: 10px;
+    text-shadow: 0 0 6px rgba(140, 160, 255, 0.35);
+}
+
+.albania .content-box p {
+    line-height: 1.7;
+    font-size: 17px;
+    color: #e4e7f5;
+    margin: 15px 0;
+}
+
+.albania .content-box ul {
+    padding-left: 20px;
+}
+
+.albania .content-box ul li {
+    margin: 8px 0;
+    padding-left: 12px;
+    border-left: 2px solid #728aff;
+    list-style: none;
+    color: #cfd8ff;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.albania .bubble {
+    width: 170px;
+    height: 170px;
+
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+
+    position: absolute;
+    opacity: 0.95;
+
+    filter: drop-shadow(0 0 10px rgba(130, 150, 255, 0.7))
+            drop-shadow(0 0 25px rgba(80, 100, 255, 0.5));
+
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+.albania .bubble1 {
+    left: 40px;
+    top: 240px;
+}
+
+.albania .bubble2 {
+    left: 80px;
+    top: 450px;
+    animation-delay: 1s;
+}
+
+.albania .bubble3 {
+    right: 40px;
+    top: 260px;
+    animation-delay: 0.5s;
+}
+
+.albania .bubble4 {
+    right: 80px;
+    top: 470px;
+    animation-delay: 1.3s;
+}
+
+.albania .content-wrapper {
+    width: 75%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.albania .big-info-box {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #e6e6e6;
+    line-height: 1.7;
+    font-size: 1.12rem;
+
+    transition: 0.35s;
+    backdrop-filter: blur(6px);
+}
+
+.albania .big-info-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 18px rgba(255, 59, 59, 0.6);
+    border-color: rgba(255, 59, 59, 0.8);
+}
+
+.albania .section-title {
+    width: fit-content;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    background: rgba(255, 59, 59, 0.15);
+    color: #ff4d4d;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 1px solid rgba(255, 59, 59, 0.4);
+
+    transition: 0.3s;
+}
+
+.albania .section-title:hover {
+    box-shadow: 0 0 12px rgba(255, 59, 59, 0.6);
+    border-color: rgba(255, 59, 59, 0.8);
+    transform: scale(1.03);
+}
+
+.albania .list-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #e0e0e0;
+
+    transition: 0.35s;
+    backdrop-filter: blur(4px);
+}
+
+.albania .list-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 16px rgba(255, 59, 59, 0.45);
+    border-color: rgba(255, 59, 59, 0.7);
+}
+
+.albania .list-box ul {
+    padding-left: 20px;
+}
+
+.albania .list-box ul li {
+    margin-bottom: 8px;
+}
+
+.albania .photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.albania .photo-card {
+    background: rgba(255, 59, 59, 0.08);
+    border: 1px solid rgba(255, 59, 59, 0.3);
+    border-radius: 12px;
+    padding: 10px;
+    width: 280px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 59, 59, 0.1);
+}
+
+.albania .photo-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.albania .photo-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 59, 59, 0.7);
+    border-color: rgba(255, 59, 59, 1);
+}
