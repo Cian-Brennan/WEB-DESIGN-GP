@@ -5,9 +5,17 @@
 html {
     background-color: #1d2327;
 }
-
-.china body {
-    
+.main body {
+    background-color: #444444;
+    background-blend-mode: overlay;
+    height: 100%;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.china body {   
     background-color: #444444;
     background-blend-mode: overlay;
     height: 100%;
@@ -24,18 +32,18 @@ html {
     top: 0;
 }
 
-.china footer {
+footer {
     background-color: #1d2327;
     color: white;
     padding-bottom: 5px;
     margin-top: 20px;
 }
 
-.china footer a {
+footer a {
     color: #CCCCCC;
 }
 
-.china footer p {
+footer p {
     font-family: sans-serif;
     font-size: 20px;
 }
@@ -120,14 +128,14 @@ html {
 
 
 /*When changing the height of this change the padding-top of the body to match it.*/
-.china .page-nav {
+.universal .page-nav {
     height: 70px;
     box-shadow: 0 2px 10px;
     margin-bottom: 10px;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.china .page-nav ul {
+.universal .page-nav ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -137,18 +145,18 @@ html {
     height: 100%;
 }
 
-.china .page-nav li {
+.universal .page-nav li {
     flex: 1;
     height: 100%;
 }
 
-.china .page-nav img {
+.universal .page-nav img {
     width: 70px;
     height: 50px;
     border-radius: 15px;
 }
 
-.china .page-nav a {
+.universal .page-nav a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,7 +167,7 @@ html {
     background-size: 20%;
 }
 
-.china .page-nav a:hover {
+.universal .page-nav a:hover {
     background-color: #777777;
     box-shadow: 0 2px 10px black;
 }
@@ -173,7 +181,7 @@ html {
 
 
 
-.china .culture-nav {
+.culture-nav {
     display: flex;
     margin-inline: auto;
     margin-bottom: 2%;
@@ -189,7 +197,7 @@ html {
     font-size: 25px;
 }
 
-.china .culture-nav ul {
+.culture-nav ul {
     display: flex;
     list-style: none;
     padding: 0;
@@ -197,23 +205,23 @@ html {
     width: 100%;
 }
 
-.china .culture-nav li {
+.culture-nav li {
     flex: 1;
 }
 
-.china .culture-nav a {
+.culture-nav a {
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: center;
 }
 
-.china .culture-nav a:hover {
+.culture-nav a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 2px 10px black;
 }
 
-.china .culture-nav img{
+.culture-nav img{
     height: 80%;
     filter: invert(100%);
 }
@@ -226,7 +234,7 @@ html {
 
 
 
-.china .flag-bar {
+.flag-bar {
     max-width: 900px;
     margin-inline: auto;
     display: flex;
@@ -238,13 +246,13 @@ html {
     padding-block: 20px;
 }
 
-.china .flag-bar img {
+.flag-bar img {
     align-items: center;
     height: 100px;
     width: 140px;
 }
 
-.china .flag-bar a {
+.flag-bar a {
     display: flex;
     justify-content: center;
     height: 100px;
@@ -253,7 +261,7 @@ html {
     overflow: hidden;
 }
 
-.china .flag-bar a:hover {
+.flag-bar a:hover {
     box-shadow: 0 2px 10px black;
 }
 
@@ -1342,107 +1350,6 @@ ALBANIA
 .albania .overview strong,
 .albania .overview em {
   color: #ffd166;
-}
-
-
-
-
-
-.albania .page-nav {
-    height: 70px;
-    box-shadow: 0 2px 10px;
-    margin-bottom: 10px;
-}
-
-.albania .page-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-}
-
-.albania .page-nav li {
-    flex: 1;
-    height: 100%;
-}
-
-.albania .page-nav img {
-    width: 70px;
-    height: 50px;
-    border-radius: 15px;
-}
-
-.albania .page-nav a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-color: #222222;
-    background-blend-mode: overlay;
-    background-position-y: center;
-    outline: 0px solid black;
-}
-
-.albania .page-nav a:hover {
-    background-color: #777777;
-    box-shadow: 0 2px 10px black;
-}
-
-
-
-
-
-
-.albania .culture-nav {
-    display: flex;
-    margin:auto;
-    justify-content: space-evenly;
-    height: 40px;
-    box-shadow: 0 2px 10px;
-    max-width: 600px;
-    width:100%;
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.7);
-    font-family: calibri;
-    font-size: 25px;
-}
-
-.albania .culture-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-
-.albania .culture-nav li {
-    flex: 1;
-}
-
-.albania .culture-nav a {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
-
-.albania .culture-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 2px 10px black;
-}
-
-.albania .culture-nav img{
-    height: 25px;
-    filter: invert(100%);
 }
 
 .albania .fun-facts {
