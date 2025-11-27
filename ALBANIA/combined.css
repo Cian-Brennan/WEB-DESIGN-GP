@@ -19,7 +19,7 @@ main {
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  
+
   max-width: 900px;
   margin: 50px auto;
   padding: 40px;
@@ -185,6 +185,7 @@ main::before {
     color: #ff4b4b;
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
+
 }
 
 .fact {
@@ -487,13 +488,13 @@ margin-bottom: 10px;
 }
 
 @keyframes fadeIn {
-    from { 
-        opacity: 0; 
-        transform: translateY(10px); 
+    from {
+        opacity: 0;
+        transform: translateY(10px);
     }
-    to { 
-        opacity: 1; 
-        transform: translateY(0); 
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -582,6 +583,7 @@ margin-bottom: 10px;
     border: 1px solid rgba(255, 59, 59, 0.4);
 
     transition: 0.3s;
+    margin: 0 auto;
 }
 
 .section-title:hover {

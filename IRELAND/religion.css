@@ -2,27 +2,7 @@ body {
     background-image: url("../IMAGES/religion_background.jpg");
 }
 
-p {
-    font-size: 20px;
-}
-
-h2 {
-    font-family: Arial;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 25px !important;
-}
-
-footer {
-    background-color: white;
-    color: black;
-}
-
-h1 {
-    font-size: 50px !important;
-}
-
-p, ul{
+.container ul{
     font-size: 20px !important;
 }
 
@@ -49,31 +29,7 @@ p, ul{
     font-weight: bold !important;
 }
 
-h1, h2, h3, h4, h5, p {
-    font-family:Arial, Helvetica, sans-serif !important;
-    font-weight: normal !important;
-}
-
-h1 {
-    font-size: 40px !important;
-}
-
-h2 {
-    font-size: 35px !important;
-}
-
-h3 {
-    font-size: 28px !important;
-}
-
-h4 {
-    font-size: 20px !important;
-}
-
-h5 {
-    font-size: 15px !important;
-}
-
-p {
-    font-size: 20px !important;
+.container h4{
+    text-decoration: underline;
+    font-size: 25px !important;
 }
