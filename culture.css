@@ -637,17 +637,20 @@ INDIA
 }
 
 /* Body with Indian flag gradient and shadowed container */
-.india body:not(.china) {
+.india body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to bottom, #FF9933 33%, #FFFFFF 34%, #FFFFFF 66%, #138808 67%);
     min-height: 100vh;
+    color: #000;
+}
+
+.india_main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
     padding: 20px;
-    color: #000;
 }
 
 /* Add soft glow around content */
@@ -686,7 +689,7 @@ INDIA
 }
 
 /* Navigation Bar */
-.india nav:not(.china) {
+.india_nav nav {
     margin: 30px 0;
     background: #000080;
     /* navy blue */
@@ -695,18 +698,18 @@ INDIA
     overflow: hidden;
 }
 
-.india nav ul:not(.china) {
+.india_nav nav ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.india nav li:not(.china) {
+.india_nav nav li {
     margin: 0;
 }
 
-.india nav a {
+.india_nav nav a {
     display: block;
     padding: 15px 25px;
     color: #fff;
@@ -715,13 +718,13 @@ INDIA
     transition: all 0.3s ease;
 }
 
-.india nav a:hover {
+.india_nav nav a:hover {
     background: #FF9933;
     color: #000;
 }
 
 /* Image Styling */
-.india img {
+.india_img img {
     width: 60%;
     max-width: 400px;
     margin-top: 25px;
@@ -730,7 +733,7 @@ INDIA
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.india img:hover {
+.india_img img:hover {
     transform: scale(1.05);
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
 }
