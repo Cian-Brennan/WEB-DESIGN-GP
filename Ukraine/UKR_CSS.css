@@ -1,0 +1,835 @@
+@font-face {
+    font-family: "Ukr_font";
+    src: url(/WEB-DESIGN-GP-main/UKRAINE/fonts/Bebas_Neue_Cyrillic.ttf);
+}
+
+/* Global Styles */
+* {
+    font-family: "Ukr_font", system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #1d2327;
+}
+
+body {
+    background-color: #444444;
+    background-blend-mode: overlay;
+    height: 100%;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header {
+    margin: 0%;
+    width: 100%;
+    top: 0;
+}
+
+p {
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 span {
+    font-size: clamp(2rem, 6vw, 60px);
+    font-family: system-ui;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: 'Gill Sans MT', sans-serif;
+    font-size: clamp(1.5rem, 5vw, 40px);
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+    color: #0057b7;
+}
+
+h4 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+/* Animations */
+h1 span:hover, h2 span:hover, .page-nav a:hover, 
+.flag-bar a:hover, .flag-bar:hover, iframe:hover,
+.cuisine:hover, .mythology:hover, .person:hover,
+.section-card:hover, .monuments:hover, .history:hover {
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+/* Navigation */
+.page-nav {
+    height: 70px;
+    box-shadow: 0 2px 10px;
+    margin-bottom: 10px;
+}
+
+.page-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.page-nav li {
+    flex: 1;
+    height: 100%;
+}
+
+.page-nav img {
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.page-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: #222222;
+    background-blend-mode: overlay;
+    background-position-y: center;
+    outline: 0px solid black;
+}
+
+.page-nav a:hover {
+    background-color: #777777;
+    box-shadow: 0 2px 10px black;
+}
+
+.page-nav a:hover img {
+    transform: scale(1.1);
+}
+
+.culture-nav {
+    display: flex;
+    margin-inline: auto;
+    margin-bottom: 2%;
+    justify-content: space-evenly;
+    height: 40px;
+    box-shadow: 0 2px 10px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: calibri;
+    font-size: 25px;
+}
+
+.culture-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.culture-nav li {
+    flex: 1;
+}
+
+.culture-nav a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.culture-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 10px black;
+}
+
+.culture-nav img {
+    height: 25px;
+    filter: invert(100%);
+}
+
+/* Homepage */
+.homepage-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.hero-section h1 {
+    font-size: clamp(3rem, 8vw, 80px);
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 6px #000000, 
+                 -1px -1px 0 #000000, 
+                 1px -1px 0 #000000, 
+                 -1px 1px 0 #000000, 
+                 1px 1px 0 #000000;
+    color: white;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.2rem, 3vw, 24px);
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+    color: white;
+    text-shadow: 2px 2px 4px #000000,
+                 -1px -1px 0 #000000,
+                 1px -1px 0 #000000,
+                 -1px 1px 0 #000000,
+                 1px 1px 0 #000000;
+}
+
+.sections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.section-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.section-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.section-card:hover .card-image {
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    color: #0057b7;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.card-content p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card-link {
+    color: #0057b7;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.ukraine-facts {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 50px 0;
+    backdrop-filter: blur(10px);
+}
+
+.ukraine-facts h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.fact-item {
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.fact-item h4 {
+    color: #0057b7;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.fact-item p {
+    color: #333;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Food Sections */
+/* Food Page Header */
+.food-header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    padding: 40px 20px;
+}
+
+.food-header h1 {
+    color: white;
+    text-shadow: 3px 3px 6px #000000, 
+                 -1px -1px 0 #000000, 
+                 1px -1px 0 #000000, 
+                 -1px 1px 0 #000000, 
+                 1px 1px 0 #000000;
+    margin-bottom: 15px;
+}
+
+.food-header p {
+    color: rgba(255,255,255,0.9);
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px #000000,
+                 -1px -1px 0 #000000,
+                 1px -1px 0 #000000,
+                 -1px 1px 0 #000000,
+                 1px 1px 0 #000000;
+}
+
+.cuisine {
+    display: grid;
+    margin: 30px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "H I"
+        "P I";
+    max-width: 1200px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    min-height: 300px;
+}
+
+.cuisine:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+}
+
+.cuisine[dir="rtl"] {
+    grid-template-areas:
+        "I H"
+        "I P";
+}
+
+.cuisine h1 {
+    grid-area: H;
+    margin: 20px;
+    align-self: end;
+}
+
+.cuisine p {
+    grid-area: P;
+    margin: 20px;
+    align-self: start;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.cuisine img {
+    grid-area: I;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.cuisine:hover img {
+    transform: scale(1.05);
+}
+
+/* Mythology Sections */
+.mythology {
+    display: grid;
+    margin: 30px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "I H"
+        "I P";
+    max-width: 1200px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    min-height: 300px;
+}
+
+.mythology[dir="ltr"] {
+    grid-template-areas:
+        "H I"
+        "P I";
+}
+
+.mythology:hover {
+    transform: translateY(-5px);
+}
+
+.mythology h1 {
+    grid-area: H;
+    margin: 20px;
+    align-self: end;
+}
+
+.mythology p {
+    grid-area: P;
+    margin: 20px;
+    align-self: start;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.mythology img {
+    grid-area: I;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* History & Monuments */
+.history, .monuments {
+    display: grid;
+    margin: 30px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "H I"
+        "P I";
+    max-width: 1200px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    min-height: 300px;
+    background: white;
+}
+
+.history:hover, .monuments:hover {
+    transform: translateY(-5px);
+}
+
+.history h1, .monuments h1 {
+    grid-area: H;
+    margin: 20px;
+    align-self: end;
+}
+
+.history p, .monuments p {
+    grid-area: P;
+    margin: 20px;
+    align-self: start;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.history img, .monuments img {
+    grid-area: I;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Containers */
+.places-container, .history-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.places-header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.places-header h1 {
+    color: white;
+    text-shadow: 3px 3px 6px #000000, 
+                 -1px -1px 0 #000000, 
+                 1px -1px 0 #000000, 
+                 -1px 1px 0 #000000, 
+                 1px 1px 0 #000000;
+}
+
+.places-header p {
+    color: rgba(255,255,255,0.9);
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px #000000,
+                 -1px -1px 0 #000000,
+                 1px -1px 0 #000000,
+                 -1px 1px 0 #000000,
+                 1px 1px 0 #000000;
+}
+
+/* Video Section */
+.video-section {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.video-container iframe:hover {
+    transform: scale(1.03);
+}
+
+/* Religion Page Styles */
+.religion-header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    padding: 40px 20px;
+}
+
+.religion-header h1 {
+    color: white;
+    text-shadow: 3px 3px 6px #000000, 
+                 -1px -1px 0 #000000, 
+                 1px -1px 0 #000000, 
+                 -1px 1px 0 #000000, 
+                 1px 1px 0 #000000;
+    margin-bottom: 15px;
+}
+
+.religion-header p {
+    color: rgba(255,255,255,0.9);
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px #000000,
+                 -1px -1px 0 #000000,
+                 1px -1px 0 #000000,
+                 -1px 1px 0 #000000,
+                 1px 1px 0 #000000;
+}
+
+.religion-article, .mythology-article {
+    background: rgba(255,255,255,0.95);
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    max-width: 1200px;
+}
+
+.religion-article h2, .mythology-article h2 {
+    color: #0057b7;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.religion-content {
+    display: grid;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.religion-item {
+    background: rgba(255,255,255,0.8);
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #0057b7;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.religion-item h3 {
+    color: #0057b7;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.religion-item img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px auto;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.mythology-grid {
+    display: grid;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.mythology-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 25px;
+    align-items: start;
+    background: rgba(255,255,255,0.9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.mythology-item:hover {
+    transform: translateY(-5px);
+}
+
+.mythology-image {
+    text-align: center;
+}
+
+.mythology-image img {
+    width: 100%;
+    max-width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.mythology-text h3 {
+    color: #8B4513;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.mythology-text p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.modern-traditions {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 40px;
+    border-left: 5px solid #28a745;
+}
+
+.modern-traditions h3 {
+    color: #28a745;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.modern-traditions p {
+    color: #495057;
+    margin-bottom: 15px;
+}
+
+/* Color Styles */
+.kiev_rus * { color: #ad852a; }
+.cossaks * { color: #a0a2ae; }
+.holodomor { color: #656565; }
+.war_ukr { color: #308d82; }
+.red_l { color: #ff6b6b; font-weight: bold; }
+
+.m_taras * { color: #3865b0; }
+.m_mother * { color: #8f847e; }
+.independ_mon * { color: #d77b37; }
+.m_king * { color: #353b35; }
+.ksl * { color: #dda78d; }
+
+/* Backgrounds */
+body[style*="Ukraine_Food_Background"] {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/WEB-DESIGN-GP-main/UKRAINE/img_ukr/ukr_pattern.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cuisine, .mythology, .history, .monuments {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "H"
+            "I"
+            "P";
+    }
+    
+    .cuisine[dir="rtl"], .mythology[dir="ltr"] {
+        grid-template-areas:
+            "H"
+            "I"
+            "P";
+    }
+    
+    .mythology-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .mythology-image img {
+        max-width: 100%;
+        height: 200px;
+    }
+    
+    .page-nav img {
+        width: 40px;
+        height: 30px;
+    }
+    
+    .culture-nav {
+        font-size: 18px;
+        height: 35px;
+    }
+    
+    .video-container, .sections-grid, .facts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ukraine-facts, .religion-article, .mythology-article {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+    
+    .hero-section {
+        padding: 40px 20px;
+    }
+    
+    .card-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .card-content p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-nav {
+        height: 50px;
+    }
+    
+    .page-nav img {
+        width: 30px;
+        height: 20px;
+    }
+    
+    .culture-nav {
+        font-size: 14px;
+        height: 30px;
+    }
+    
+    .culture-nav img {
+        height: 18px;
+    }
+    
+    h1 span {
+        font-size: clamp(1.5rem, 8vw, 40px);
+    }
+    
+    h2 {
+        font-size: clamp(1.2rem, 6vw, 30px);
+    }
+    
+    .religion-article h2, .mythology-article h2 {
+        font-size: 2rem;
+    }
+    
+    .religion-item h3, .mythology-text h3 {
+        font-size: 1.3rem;
+    }
+    
+    .modern-traditions {
+        padding: 20px;
+    }
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.text-white { color: white; }
+.mb-20 { margin-bottom: 20px; }
+.mt-20 { margin-top: 20px; }
+.p-20 { padding: 20px; }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a:not(.page-nav a):not(.culture-nav a):not(.section-card) {
+    color: #0057b7;
+    text-decoration: none;
+}
+
+a:not(.page-nav a):not(.culture-nav a):not(.section-card):hover {
+    text-decoration: underline;
+}
+
+strong {
+    color: #ffd700;
+    font-weight: bold;
+}
