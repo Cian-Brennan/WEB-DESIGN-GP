@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta name="description" content="Ukrainian Places" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ukrainian Places</title>
+    <title>Chinese Food</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="../culture.css" /> 
+	<link rel="stylesheet" href="../culture.css" />
+    <link rel="icon" href="../IMAGES/Home.png" type="image/x-icon"> 
 </head>
 
-<body style="background-image: url(../IMAGES/Chinese\ Cuisine\ Background.jpg);">
+<body>
+    <video autoplay muted loop id="myVideo" style="filter:brightness(30%)">
+        <source src="../IMAGES/China Cuisine Background.mp4" type="video/mp4">
+    </video>
+    <div class="content">
     <header>
         <div class="universal">
             <nav class="page-nav">
@@ -33,6 +38,16 @@
             </nav>
         </div>
     </header>
+        <div class="text_box" style="background-color: #FF000077; background-image: url(../IMAGES/pattern\(12\).svg); max-width: 800px; margin:auto; text-decoration: underline white;">
+            <p style="color:white; font-family: 'goudy old style'; margin: none;">RECIPES</p>
+            <div class="recipes" style="margin-inline: 2%; margin-bottom: 2%;">
+                <a href="https://www.kitchensanctuary.com/vegetable-spring-rolls/"><button style="background-image: url(../IMAGES/Spring-rolls.png);"></button></a>
+                <a href="https://www.kitchensanctuary.com/kung-pao-chicken/"><button style="background-image: url(../IMAGES/kung-pao-chicken.jpg);"></button></a>
+                <a href="https://www.bbcgoodfood.com/recipes/dumplings"><button style="background-image: url(../IMAGES/Dumplings.jpg);"></button></a>
+                <a href="https://www.bbcgoodfood.com/recipes/chinese-style-hotpot"><button style="background-image: url(../IMAGES/hot-pot.jpg);"></button></a>
+                <a href="https://www.bbcgoodfood.com/recipes/chow-mein"><button style="background-image: url(../IMAGES/Chow-Mein.jpg);"></button></a>
+            </div>
+        </div>
 
     <section class="cuisine" dir="ltr" style="background-image: url(../IMAGES/pattern\(5\).svg); background-color:#eaa746;">
     <h1 style="color: black"><span> Spring Rolls </span></h1>
@@ -40,7 +55,7 @@
     <p style="color: black;"><span> A golden brown roll with meat or vegetable filling, the spring roll is a staple of Chinese culture and is eaten to signify the coming of spring. The deep-fried snack has made it's way across the world as people fall in love with its flavour. It's often sent to relatives during Chinese New Year as a spring present and blessing. </span></p>
     </section>
 
-    <section class="cuisine" dir="ltr" style="background-image: url(../IMAGES/pattern\(6\).svg); background-color:#a82900;">
+    <section class="cuisine" dir="rtl" style="background-image: url(../IMAGES/pattern\(6\).svg); background-color:#a82900;">
     <h1 style="color: white"><span> Kung-Pao Chicken </span></h1>
     <img src="../IMAGES/kung-pao-chicken.jpg" alt="Pizza">
     <p style="color: white;"><span> Popular with both Chinese and foreigners, Kung-Pao Chicken is famous for its delicious diced chicken, peanuts and dried chili. It is believed to have been invented by palace guardian Ding Baozhen of the Qing dynasty. Kung Pao is actually named 'Gōngbǎo (Palace Guardian) jīdīng (Chicken Cubes)' in China. </span></p>
@@ -52,7 +67,7 @@
     <p style="color: black;"><span> Dumplings are probably the most iconic snack to come from Chinese culture. They are half-moon shaped, soft pieces of cooked dough often wrapped around a filling. Traditionally a northern food, dumplings made their way south and are used to celebrate the coming of New Year and Spring across the country. </span></p>
     </section>
 
-    <section class="cuisine" dir="ltr" style="background-image: url(../IMAGES/pattern\(8\).svg); background-color:#eb4123;">
+    <section class="cuisine" dir="rtl" style="background-image: url(../IMAGES/pattern\(8\).svg); background-color:#eb4123;">
     <h1 style="color: black"><span> Hot-pot </span></h1>
     <img src="../IMAGES/hot-pot.jpg" alt="Pizza">
     <p style="color: black;"><span> The Chinese hotpot is perhaps one of the most unique dishes to come from their cuisine. Consisting of a simmering metal pot with broth at the center of a table and raw ingredients around it, the idea is everyone can add and cook whatever they like in the pot as they socialise with one another. </span></p>
@@ -70,7 +85,7 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/0Ii0Jk_0uIo?si=A0eV12nqrK1uBkkT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     <footer id = "footer-layout">
-        <p> &copy; <a href="dcu.ie/">DCU 2025-2026</a>
+        <p>	<span class="footer-text"> DCU 2025-2026</span>
 			<span class="footer-separator">&middot;</span>
 			<span class="footer-text">ComSci_Group_31</span> 
 			<span class="footer-separator">&middot;</span> 
@@ -81,4 +96,5 @@
 			<span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a></span>
 		</p>
     </footer>
+    </div>
 </body>
