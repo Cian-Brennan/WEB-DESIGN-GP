@@ -108,7 +108,7 @@ footer p {
     transform: scale(1.02);
 }
 
-.china .cuisine, .china .mythology, .china .mythology img, .china .flag-bar, .china .people, .china .text_box, .china .recipe_box {
+.china .cuisine, .china .mythology, .china .mythology img, .flag-bar, .china .people, .china .text_box, .china .recipe_box {
     border-radius: 50px;
     box-shadow: 0 4px 12px;
 }
@@ -379,6 +379,10 @@ footer p {
     grid-auto-rows: 300px;
     grid-auto-flow:column;
     overflow:scroll
+}
+
+.china .person img {
+    height: 300px;
 }
 
 
@@ -2319,4 +2323,715 @@ IRELAND
 .irish_religion .container h4{
     text-decoration: underline;
     font-size: 25px !important;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////
+UKRAINE
+/////////////////////////////////////////////////////////////////////////////*/
+
+@font-face {
+    font-family: "Ukr_font";
+    src: url(/WEB-DESIGN-GP-main/UKRAINE/fonts/Bebas_Neue_Cyrillic.ttf);
+}
+
+/* Global Styles */
+.ukraine * {
+    font-family: "Ukr_font", system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ukraine html {
+    background-color: #1d2327;
+}
+
+.ukraine body {
+    background-color: #444444;
+    background-blend-mode: overlay;
+    height: 100%;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.ukraine p {
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.ukraine h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.ukraine h1 span {
+    font-size: clamp(2rem, 6vw, 60px);
+    font-family: system-ui;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.ukraine h2 {
+    font-family: 'Gill Sans MT', sans-serif;
+    font-size: clamp(1.5rem, 5vw, 40px);
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+.ukraine .culture-nav {
+    margin: auto;
+}
+
+.ukraine h3 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+    color: #0057b7;
+}
+
+.ukraine h4 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+/* Animations */
+.ukraine h1 span:hover, .ukraine h2 span:hover, .ukraine .page-nav a:hover, 
+.ukraine .flag-bar a:hover, .ukraine .flag-bar:hover, .ukraine iframe:hover,
+.ukraine .cuisine:hover, .ukraine .mythology:hover, .ukraine .person:hover,
+.ukraine .section-card:hover, .ukraine .monuments:hover, .ukraine .history:hover {
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+
+/* Homepage */
+.ukraine .homepage-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ukraine .hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.ukraine .hero-section h1 {
+    font-size: clamp(3rem, 8vw, 80px);
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 6px #000000, 
+                 -1px -1px 0 #000000, 
+                 1px -1px 0 #000000, 
+                 -1px 1px 0 #000000, 
+                 1px 1px 0 #000000;
+    color: white;
+}
+
+.ukraine .hero-subtitle {
+    font-size: clamp(1.2rem, 3vw, 24px);
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+    color: white;
+    text-shadow: 2px 2px 4px #000000,
+                 -1px -1px 0 #000000,
+                 1px -1px 0 #000000,
+                 -1px 1px 0 #000000,
+                 1px 1px 0 #000000;
+}
+
+.ukraine .sections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.ukraine .section-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.ukraine .section-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.ukraine .card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.ukraine .section-card:hover .card-image {
+    transform: scale(1.1);
+}
+
+.ukraine .card-content {
+    padding: 20px;
+}
+
+.ukraine .card-content h3 {
+    color: #0057b7;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.ukraine .card-content p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.ukraine .card-link {
+    color: #0057b7;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.ukraine .ukraine-facts {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 50px 0;
+    backdrop-filter: blur(10px);
+}
+
+.ukraine .ukraine-facts h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.ukraine .facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.ukraine .fact-item {
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.ukraine .fact-item h4 {
+    color: #0057b7;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.ukraine .fact-item p {
+    color: #333;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Food Sections */
+/* Food Page Header */
+.ukraine .food-header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    padding: 40px 20px;
+}
+
+.ukraine .food-header h1 {
+    color: white;
+    text-shadow: 3px 3px 6px #000000, 
+                 -1px -1px 0 #000000, 
+                 1px -1px 0 #000000, 
+                 -1px 1px 0 #000000, 
+                 1px 1px 0 #000000;
+    margin-bottom: 15px;
+}
+
+.ukraine .food-header p {
+    color: rgba(255,255,255,0.9);
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px #000000,
+                 -1px -1px 0 #000000,
+                 1px -1px 0 #000000,
+                 -1px 1px 0 #000000,
+                 1px 1px 0 #000000;
+}
+
+.ukraine .cuisine {
+    display: grid;
+    margin: 30px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "H I"
+        "P I";
+    max-width: 1200px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    min-height: 300px;
+}
+
+.ukraine .cuisine:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+}
+
+.ukraine .cuisine[dir="rtl"] {
+    grid-template-areas:
+        "I H"
+        "I P";
+}
+
+.ukraine .cuisine h1 {
+    grid-area: H;
+    margin: 20px;
+    align-self: end;
+}
+
+.ukraine .cuisine p {
+    grid-area: P;
+    margin: 20px;
+    align-self: start;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.ukraine .cuisine img {
+    grid-area: I;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.ukraine .cuisine:hover img {
+    transform: scale(1.05);
+}
+
+/* Mythology Sections */
+.ukraine .mythology {
+    display: grid;
+    margin: 30px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "I H"
+        "I P";
+    max-width: 1200px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    min-height: 300px;
+}
+
+.ukraine .mythology[dir="ltr"] {
+    grid-template-areas:
+        "H I"
+        "P I";
+}
+
+.ukraine .mythology:hover {
+    transform: translateY(-5px);
+}
+
+.ukraine .mythology h1 {
+    grid-area: H;
+    margin: 20px;
+    align-self: end;
+}
+
+.ukraine .mythology p {
+    grid-area: P;
+    margin: 20px;
+    align-self: start;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.ukraine .mythology img {
+    grid-area: I;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* History & Monuments */
+.ukraine .history, .ukraine .monuments {
+    display: grid;
+    margin: 30px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "H I"
+        "P I";
+    max-width: 1200px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    min-height: 300px;
+    background: white;
+}
+
+.ukraine .history:hover, .ukraine .monuments:hover {
+    transform: translateY(-5px);
+}
+
+.ukraine .history h1, .ukraine .monuments h1 {
+    grid-area: H;
+    margin: 20px;
+    align-self: end;
+}
+
+.ukraine .history p, .ukraine .monuments p {
+    grid-area: P;
+    margin: 20px;
+    align-self: start;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.ukraine .history img, .ukraine .monuments img {
+    grid-area: I;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Containers */
+.ukraine .places-container, .ukraine .history-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.ukraine .places-header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.ukraine .places-header h1 {
+    color: white;
+    text-shadow: 3px 3px 6px #000000, 
+                 -1px -1px 0 #000000, 
+                 1px -1px 0 #000000, 
+                 -1px 1px 0 #000000, 
+                 1px 1px 0 #000000;
+}
+
+.ukraine .places-header p {
+    color: rgba(255,255,255,0.9);
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px #000000,
+                 -1px -1px 0 #000000,
+                 1px -1px 0 #000000,
+                 -1px 1px 0 #000000,
+                 1px 1px 0 #000000;
+}
+
+/* Video Section */
+.ukraine .video-section {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.ukraine .video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.ukraine .video-container iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.ukraine .video-container iframe:hover {
+    transform: scale(1.03);
+}
+
+.ukraine .video_h {
+    margin: auto;
+    grid-area: H;
+}
+/* Religion Page Styles */
+.ukraine .religion-header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    padding: 40px 20px;
+}
+
+.ukraine .religion-header h1 {
+    color: white;
+    text-shadow: 3px 3px 6px #000000, 
+                 -1px -1px 0 #000000, 
+                 1px -1px 0 #000000, 
+                 -1px 1px 0 #000000, 
+                 1px 1px 0 #000000;
+    margin-bottom: 15px;
+}
+
+.ukraine .religion-header p {
+    color: rgba(255,255,255,0.9);
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px #000000,
+                 -1px -1px 0 #000000,
+                 1px -1px 0 #000000,
+                 -1px 1px 0 #000000,
+                 1px 1px 0 #000000;
+}
+
+.ukraine .religion-article, .ukraine .mythology-article {
+    background: rgba(255,255,255,0.95);
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    max-width: 1200px;
+}
+
+.ukraine .religion-article h2, .ukraine .mythology-article h2 {
+    color: #0057b7;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.ukraine .religion-content {
+    display: grid;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.ukraine .religion-item {
+    background: rgba(255,255,255,0.8);
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #0057b7;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.ukraine .religion-item h3 {
+    color: #0057b7;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.ukraine .religion-item img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px auto;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.ukraine .mythology-grid {
+    display: grid;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.ukraine .mythology-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 25px;
+    align-items: start;
+    background: rgba(255,255,255,0.9);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.ukraine .mythology-item:hover {
+    transform: translateY(-5px);
+}
+
+.ukraine .mythology-image {
+    text-align: center;
+}
+
+.ukraine .mythology-image img {
+    width: 100%;
+    max-width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.ukraine .mythology-text h3 {
+    color: #8B4513;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.ukraine .mythology-text p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.ukraine .modern-traditions {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 40px;
+    border-left: 5px solid #28a745;
+}
+
+.ukraine .modern-traditions h3 {
+    color: #28a745;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.ukraine .modern-traditions p {
+    color: #495057;
+    margin-bottom: 15px;
+}
+
+/* Color Styles */
+.ukraine .kiev_rus * { color: #ad852a; }
+.ukraine .cossaks * { color: #a0a2ae; }
+.ukraine .holodomor { color: #656565; }
+.ukraine .war_ukr { color: #308d82; }
+.ukraine .red_l { color: #ff6b6b; font-weight: bold; }
+
+.ukraine .m_taras * { color: #3865b0; }
+.ukraine .m_mother * { color: #8f847e; }
+.ukraine .independ_mon * { color: #d77b37; }
+.ukraine .m_king * { color: #353b35; }
+.ukraine .ksl * { color: #dda78d; }
+
+/* Backgrounds */
+.ukraine body[style*="Ukraine_Food_Background"] {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/WEB-DESIGN-GP-main/UKRAINE/img_ukr/ukr_pattern.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ukraine .cuisine, .ukraine .mythology, .ukraine .history, .ukraine .monuments {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "H"
+            "I"
+            "P";
+    }
+    
+    .ukraine .cuisine[dir="rtl"], .ukraine .mythology[dir="ltr"] {
+        grid-template-areas:
+            "H"
+            "I"
+            "P";
+    }
+    
+    .ukraine .mythology-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .ukraine .mythology-image img {
+        max-width: 100%;
+        height: 200px;
+    }
+    
+    .ukraine .video-container, .ukraine .sections-grid, .ukraine .facts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ukraine .ukraine-facts, .ukraine .religion-article, .ukraine .mythology-article {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+    
+    .ukraine .hero-section {
+        padding: 40px 20px;
+    }
+    
+    .ukraine .card-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .ukraine .card-content p {
+        font-size: 13px;
+    }
+}
+    
+    .ukraine h1 span {
+        font-size: clamp(1.5rem, 8vw, 40px);
+    }
+    
+    .ukraine h2 {
+        font-size: clamp(1.2rem, 6vw, 30px);
+    }
+    
+    .ukraine .religion-article h2, .ukraine .mythology-article h2 {
+        font-size: 2rem;
+    }
+    
+    .ukraine .religion-item h3, .ukraine .mythology-text h3 {
+        font-size: 1.3rem;
+    }
+    
+    .ukraine .modern-traditions {
+        padding: 20px;
+    }
+
+/* Utility Classes */
+.ukraine .text-center { text-align: center; }
+.ukraine .text-white { color: white; }
+.ukraine .mb-20 { margin-bottom: 20px; }
+.ukraine .mt-20 { margin-top: 20px; }
+.ukraine .p-20 { padding: 20px; }
+
+
+
+.ukraine a:not(.page-nav a):not(.culture-nav a):not(.section-card) {
+    color: #0057b7;
+    text-decoration: none;
+}
+
+.ukraine a:not(.page-nav a):not(.culture-nav a):not(.section-card):hover {
+    text-decoration: underline;
+}
+
+.ukraine strong {
+    color: #ffd700;
+    font-weight: bold;
 }
